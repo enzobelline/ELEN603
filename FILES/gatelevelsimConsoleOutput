@@ -1,0 +1,358 @@
+[lkim@linuxvdi09 FILES]$ vcs -sverilog -debug_access testbenchSMOKE.sv router.v lsi_10k.v -y -full64
+                         Chronologic VCS (TM)
+      Version P-2019.06-SP2-1_Full64 -- Sun Dec 18 04:21:31 2022
+               Copyright (c) 1991-2019 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+
+Warning-[LIB-NO-EXT] File extension not specified
+  There is no file extension specified for verilog source library paths 
+  provided through '-y' option in command line.
+  These library paths will be ignored.
+
+Parsing design file 'testbenchSMOKE.sv'
+Parsing design file 'router.v'
+Parsing design file 'lsi_10k.v'
+Top Level Modules:
+       tb
+       Arbiter
+       AN2
+       OR2
+       IV
+       IVP
+       IVA
+       IVAP
+       IVDA
+       IVDAP
+       B5I
+       B5IP
+       B4I
+       B4IP
+       ND2
+       ND2P
+       NR2
+       NR2P
+       EN
+       EO
+       ND3
+       ND3P
+       NR3
+       NR3P
+       AN3
+       OR3
+       ND4
+       ND4P
+       NR4
+       ND5
+       AO6
+       AO6P
+       AO7
+       AO7P
+       AO2
+       AO2P
+       AO4
+       AO4P
+       AO1
+       AO3
+       AO11
+       AN2P
+       AN3P
+       AN4
+       AN4P
+       OR2P
+       OR3P
+       OR4
+       OR4P
+       MUX21H
+       MUX41
+       NR5
+       ND6
+       NR6
+       ND8
+       NR8
+       EON1
+       EO1
+       ND5P
+       NR5P
+       ND6P
+       NR6P
+       ND8P
+       NR8P
+       NR16
+       NR16P
+       ENP
+       EOP
+       EO1P
+       EON1P
+       AO1P
+       AO3P
+       AO11P
+       MUX21HP
+       MUX21L
+       MUX21LP
+       MUX31L
+       MUX31LP
+       MUX41P
+       MUX21LA
+       MUX51H
+       MUX51HP
+       MUX81
+       MUX81P
+       AO5
+       AO5P
+       EN3
+       EN3P
+       EO3
+       EO3P
+       AO12
+       AO12P
+       B1I
+       MUX21LAP
+       NR4P
+       FD1
+       FD1P
+       FD1S
+       FD1SP
+       FD2
+       FD2P
+       FD2S
+       FD2SP
+       FD3
+       FD3P
+       FD3S
+       FD3SP
+       FD4
+       FD4P
+       FD4S
+       FD4SP
+       FJK1
+       FJK1P
+       FJK1S
+       FJK1SP
+       FJK2
+       FJK2P
+       FJK2S
+       FJK2SP
+       FJK3
+       FJK3P
+       FJK3S
+       FJK3SP
+       LD1
+       LD1P
+       LD2
+       LD2P
+       LD3
+       LD3P
+       LD4
+       LD4P
+       B2I
+       B2IP
+       B3I
+       B3IP
+       D24L
+       D24LP
+       FA1
+       FA1A
+       FA1AP
+       FA1P
+       HA1
+       HA1P
+       FDS2
+       FDS2L
+       FDS2LP
+       FDS2P
+       FT2
+       FT2P
+       FT4
+       FT4P
+       LD1X4
+       LD1X4P
+       BTS4
+       BTS4P
+       BTS5
+       BTS5P
+       FD2TS
+       FD2TSP
+       RAM1
+TimeScale is 1 ns / 1 ps
+Starting vcs inline pass...
+166 modules and 8 UDPs read.
+recompiling module tb
+recompiling module monitor
+recompiling module portin
+recompiling module Mux8x1
+recompiling module Fifo
+recompiling module portout
+recompiling module Arbiter
+recompiling module pri_encoder
+recompiling module AN2
+recompiling module OR2
+recompiling module IV
+recompiling module IVP
+recompiling module IVA
+recompiling module IVAP
+recompiling module IVDA
+recompiling module IVDAP
+recompiling module B5I
+recompiling module B5IP
+recompiling module B4I
+recompiling module B4IP
+recompiling module ND2
+recompiling module ND2P
+recompiling module NR2
+recompiling module NR2P
+recompiling module EN
+recompiling module EO
+recompiling module ND3
+recompiling module ND3P
+recompiling module NR3
+recompiling module NR3P
+recompiling module AN3
+recompiling module OR3
+recompiling module ND4
+recompiling module ND4P
+recompiling module NR4
+recompiling module ND5
+recompiling module AO6
+recompiling module AO6P
+recompiling module AO7
+recompiling module AO7P
+recompiling module AO2
+recompiling module AO2P
+recompiling module AO4
+recompiling module AO4P
+recompiling module AO1
+recompiling module AO3
+recompiling module AO11
+recompiling module AN2P
+recompiling module AN3P
+recompiling module AN4
+50 of 166 modules done
+recompiling module AN4P
+recompiling module OR2P
+recompiling module OR3P
+recompiling module OR4
+recompiling module OR4P
+recompiling module MUX21H
+recompiling module MUX41
+recompiling module NR5
+recompiling module ND6
+recompiling module NR6
+recompiling module ND8
+recompiling module NR8
+recompiling module EON1
+recompiling module EO1
+recompiling module ND5P
+recompiling module NR5P
+recompiling module ND6P
+recompiling module NR6P
+recompiling module ND8P
+recompiling module NR8P
+recompiling module NR16
+recompiling module NR16P
+recompiling module ENP
+recompiling module EOP
+recompiling module EO1P
+recompiling module EON1P
+recompiling module AO1P
+recompiling module AO3P
+recompiling module AO11P
+recompiling module MUX21HP
+recompiling module MUX21L
+recompiling module MUX21LP
+recompiling module MUX31L
+recompiling module MUX31LP
+recompiling module MUX41P
+recompiling module MUX21LA
+recompiling module MUX51H
+recompiling module MUX51HP
+recompiling module MUX81
+recompiling module MUX81P
+recompiling module AO5
+recompiling module AO5P
+recompiling module EN3
+recompiling module EN3P
+recompiling module EO3
+recompiling module EO3P
+recompiling module AO12
+recompiling module AO12P
+recompiling module B1I
+recompiling module MUX21LAP
+100 of 166 modules done
+recompiling module NR4P
+recompiling module FD1
+recompiling module FD1P
+recompiling module FD1S
+recompiling module FD1SP
+recompiling module FD2
+recompiling module FD2P
+recompiling module FD2S
+recompiling module FD2SP
+recompiling module FD3
+recompiling module FD3P
+recompiling module FD3S
+recompiling module FD3SP
+recompiling module FD4
+recompiling module FD4P
+recompiling module FD4S
+recompiling module FD4SP
+recompiling module FJK1
+recompiling module FJK1P
+recompiling module FJK1S
+recompiling module FJK1SP
+recompiling module FJK2
+recompiling module FJK2P
+recompiling module FJK2S
+recompiling module FJK2SP
+recompiling module FJK3
+recompiling module FJK3P
+recompiling module FJK3S
+recompiling module FJK3SP
+recompiling module LD1
+recompiling module LD1P
+recompiling module LD2
+recompiling module LD2P
+recompiling module LD3
+recompiling module LD3P
+recompiling module LD4
+recompiling module LD4P
+recompiling module B2I
+recompiling module B2IP
+recompiling module B3I
+recompiling module B3IP
+recompiling module D24L
+recompiling module D24LP
+recompiling module FA1
+recompiling module FA1A
+recompiling module FA1AP
+recompiling module FA1P
+recompiling module HA1
+recompiling module HA1P
+recompiling module FDS2
+150 of 166 modules done
+recompiling module FDS2L
+recompiling module FDS2LP
+recompiling module FDS2P
+recompiling module FT2
+recompiling module FT2P
+recompiling module FT4
+recompiling module FT4P
+recompiling module LD1X4
+recompiling module LD1X4P
+recompiling module BTS4
+recompiling module BTS4P
+recompiling module BTS5
+recompiling module BTS5P
+recompiling module FD2TS
+recompiling module FD2TSP
+recompiling module RAM1
+All of 166 modules done
+rm -f _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+if [ -x ../simv ]; then chmod a-x ../simv; fi
+g++  -o ../simv    -rdynamic  -Wl,-rpath='$ORIGIN'/simv.daidir -Wl,-rpath=./simv.daidir -Wl,-rpath=/opt/synopsys-2019/app/vcs/P-2019.06-SP2-1/linux64/lib -L/opt/synopsys-2019/app/vcs/P-2019.06-SP2-1/linux64/lib  -Wl,-rpath-link=./  /usr/lib64/libnuma.so.1   objs/amcQw_d.o   _24610_archive_1.so _prev_archive_1.so objs/udps/IgcAJ.o objs/udps/EEcdV.o objs/udps/kNjuK.o objs/udps/NNz8z.o objs/udps/is4yy.o objs/udps/exIG1.o objs/udps/ZppNR.o objs/udps/zxx7E.o  SIM_l.o      rmapats_mop.o rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o rmar_llvm_0_0.o          -lvirsim -lerrorinf -lsnpsmalloc -lvfs    -lvcsnew -lsimprofile -luclinative /opt/synopsys-2019/app/vcs/P-2019.06-SP2-1/linux64/lib/vcs_tls.o   -Wl,-whole-archive -lvcsucli -Wl,-no-whole-archive        _vcs_pli_stub_.o   /opt/synopsys-2019/app/vcs/P-2019.06-SP2-1/linux64/lib/vcs_save_restore_new.o /opt/synopsys-2017/app/verdi/Verdi_N-2017.12-SP1-1//share/PLI/VCS/LINUX64/pli.a -ldl  -lc -lm -lpthread -ldl 
+../simv up to date
+CPU time: 1.044 seconds to compile + .395 seconds to elab + .340 seconds to link

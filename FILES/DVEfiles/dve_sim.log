@@ -1,0 +1,526 @@
+03:50:53    1274 --> ...                                                                                                  [tcl] ucliGUI::start /DCNFS/users/student/lkim/Desktop/Fall2022/603/FILES/simv -ucligui +1PORT
+03:50:53    1275 --> ...  [tcl] set ucliGUI::state
+03:50:53    1276 --> ...      [tcl] gui_update_simulator_buttons
+03:50:54    1277 --> ...          [tcl] set ucliGUI::state
+03:50:54    1278 --> ...              [tcl] ucliCore::getToolPID
+03:50:54    1279 --> ...                  [tcl] synopsys::env hasTB
+03:50:54    1280 --> ...                      [tcl] trigger_hier_stack_context_switch 0
+03:50:54    1281 --> ...                          [tcl] synopsys::xml set_array_limit <data limit="50" />
+03:50:54    1282 --> ...                              [tcl] synopsys::xml set_depth_limit <data limit="100" />
+03:50:54    1283 --> ...                                  [tcl] synopsys::xml set_string_limit <data limit="1000" />
+03:50:54    1284 --> ...                                      [tcl] synopsys::xml set_only_active_frame <data value="1" />
+03:50:54    1285 --> ...                                          [tcl] synopsys::xml set_variable_frame_id <data value="1" />
+03:50:54    1286 --> ...                                              [tcl] synUtils::setDVEInitPhase 1
+03:50:54    1287 --> ...                                                  [tcl] gui_get_env SIMSETUP::SIMVPD
+03:50:54    1288 --> ...                                                      [tcl] synopsys::dump -type VPD -file /DCNFS/users/student/lkim/Desktop/Fall2022/603/FILES/inter.vpd -locking
+03:50:54    1289 --> ...                                                          [tcl] synopsys::dump -autoflush on -fid VPD4
+03:50:54    1290 --> ...                                                              [tcl] set ::dve_fid VPD4
+03:50:54    1291 --> ...                                                                  [tcl] synUtils::setDVEInitPhase 0
+03:50:54    1292 --> ...                                                                      [tcl] ucliCore::getToolPID
+03:50:54    1293 --> ...                                                                          [tcl] synUtils::sendTool -active _icl_setToolSocket /tmp/smlnpYaqRzh
+03:50:54    1294 --> ...                                                                              [tcl] synUtils::sendTool -active {_icl_start_rpc -version "P-2019.06-SP2-1_Full64" -sync_file /tmp/vcs_dve_rpc.lkim.19513}
+03:50:54    1295 --> ...                                                                                  [tcl] synUtils::sendTool -active {_icl_createSharedMemory /tmp/vcs_dve_general.lkim.19513}
+03:50:54    1296 --> ...                                                                                      [tcl] config endofsim noexit
+03:50:54    1297 --> ...                                                                                          [tcl] config onfail enable all
+03:50:54    1298 --> ...                                                                                              [tcl] config syscaddplainmembers
+03:50:54    1299 --> ...                                                                                                  [tcl] config syscaddsourcenames
+03:50:54    1300 --> ...  [tcl] config syscaddstructtypes
+03:50:54    1301 --> ...      [tcl] synopsys::listing -disable
+03:50:54    1302 --> ...          [tcl] # Begin_DVE_Session_Save_Info
+03:50:54    1303 --> ...              [tcl] # DVE restart session
+03:50:54    1304 --> ...                  [tcl] # Saved on Sun Dec 18 03:50:49 2022
+03:50:54    1305 --> ...                      [tcl] # Designs open: 1
+03:50:54    1306 --> ...                          [tcl] #   Sim: /DCNFS/users/student/lkim/Desktop/Fall2022/603/FILES/simv
+03:50:54    1307 --> ...                              [tcl] # Toplevel windows open: 3
+03:50:54    1308 --> ...                                  [tcl] # 	TopLevel.1
+03:50:54    1309 --> ...                                      [tcl] # 	TopLevel.2
+03:50:54    1310 --> ...                                          [tcl] # 	TopLevel.3
+03:50:54    1311 --> ...                                              [tcl] #   Source.1: tb.dut
+03:50:54    1312 --> ...                                                  [tcl] #   Wave.1: 180 signals
+03:50:54    1313 --> ...                                                      [tcl] #   Wave.2: 144 signals
+03:50:54    1314 --> ...                                                          [tcl] #   Group count = 20
+03:50:54    1315 --> ...                                                              [tcl] #   Group inst[0].fifo signal count = 20
+03:50:54    1316 --> ...                                                                  [tcl] #   Group inst[0].portout signal count = 18
+03:50:54    1317 --> ...                                                                      [tcl] #   Group inst[0].mux8x1 signal count = 14
+03:50:54    1318 --> ...                                                                          [tcl] #   Group inst[0].port signal count = 12
+03:50:54    1319 --> ...                                                                              [tcl] #   Group inst[1].fifo signal count = 16
+03:50:54    1320 --> ...                                                                                  [tcl] #   Group inst[1].mux8x1 signal count = 14
+03:50:54    1321 --> ...                                                                                      [tcl] #   Group inst[1].port signal count = 12
+03:50:54    1322 --> ...                                                                                          [tcl] #   Group inst[1].portout signal count = 18
+03:50:54    1323 --> ...                                                                                              [tcl] #   Group inst[0].portout_1 signal count = 18
+03:50:54    1324 --> ...                                                                                                  [tcl] #   Group inst[1].portout_1 signal count = 18
+03:50:54    1325 --> ...  [tcl] #   Group inst[2].portout signal count = 18
+03:50:54    1326 --> ...      [tcl] #   Group inst[3].portout signal count = 18
+03:50:54    1327 --> ...          [tcl] #   Group inst[4].portout signal count = 18
+03:50:54    1328 --> ...              [tcl] #   Group inst[5].portout signal count = 18
+03:50:54    1329 --> ...                  [tcl] #   Group inst[6].portout signal count = 18
+03:50:54    1330 --> ...                      [tcl] #   Group inst[7].portout signal count = 18
+03:50:54    1331 --> ...                          [tcl] # End_DVE_Session_Save_Info
+03:50:54    1332 --> ...                              [tcl] # DVE version: P-2019.06-SP2-1_Full64
+03:50:54    1333 --> ...                                  [tcl] # DVE build date: Jan 30 2020 21:14:28
+03:50:54    1334 --> ...                                      [tcl] #<Session mode="Restart" path=".restartSimSession.tcl" type="Debug">
+03:50:54    1335 --> ...                                          [tcl] gui_set_loading_session_type Restart
+03:50:54    1336 --> ...                                              [tcl] gui_continuetime_set
+03:50:54    1337 --> ...                                                  [tcl] gui_clear_window -type Wave
+03:50:55    1338 --> ...                                                      [tcl] gui_clear_window -type List
+03:50:55    1339 --> ...                                                          [tcl] # Application preferences
+03:50:55    1340 --> ...                                                              [tcl] gui_set_pref_value -key app_default_font -value {Helvetica,10,-1,5,50,0,0,0,0,0}
+03:50:55    1341 --> ...                                                                  [tcl] gui_src_preferences -tabstop 8 -maxbits 24 -windownumber 1
+03:50:55    1342 --> ...                                                                      [tcl] #<WindowLayout>
+03:50:55    1343 --> ...                                                                          [tcl] # DVE top-level session
+03:50:55    1344 --> ...                                                                              [tcl] # Create and position top-level window: TopLevel.1
+03:50:55    1345 --> ...                                                                                  [tcl] set TopLevel.1 TopLevel.1
+03:50:55    1346 --> ...                                                                                      [tcl] # Docked window settings
+03:50:55    1347 --> ...                                                                                          [tcl] set HSPane.1 HSPane.1
+03:50:55    1348 --> ...                                                                                              [tcl] set Hier.1 Hier.1
+03:50:55    1349 --> ...                                                                                                  [tcl] set Stack.1 Stack.1
+03:50:55    1350 --> ...  [tcl] set Class.1 Class.1
+03:50:55    1351 --> ...      [tcl] set Object.1 Object.1
+03:50:55    1352 --> ...          [tcl] set DLPane.1 DLPane.1
+03:50:55    1353 --> ...              [tcl] set Data.1 Data.1
+03:50:55    1354 --> ...                  [tcl] set Local.1 Local.1
+03:50:55    1355 --> ...                      [tcl] set Member.1 Member.1
+03:50:55    1356 --> ...                          [tcl] set Console.1 Console.1
+03:50:55    1357 --> ...                              [tcl] gui_sync_global -id ${TopLevel.1} -option true
+03:50:55    1358 --> ...                                  [tcl] # MDI window settings
+03:50:55    1359 --> ...                                      [tcl] set Source.1 Source.1
+03:50:55    1360 --> ...                                          [tcl] gui_update_layout -id ${Source.1} {{show_state maximized} {dock_state undocked} {dock_on_new_line false}}
+03:50:55    1361 --> ...                                              [tcl] # End MDI window settings
+03:50:55    1362 --> ...                                                  [tcl] # Create and position top-level window: TopLevel.2
+03:50:55    1363 --> ...                                                      [tcl] set TopLevel.2 TopLevel.2
+03:50:55    1364 --> ...                                                          [tcl] # Docked window settings
+03:50:55    1365 --> ...                                                              [tcl] gui_sync_global -id ${TopLevel.2} -option true
+03:50:55    1366 --> ...                                                                  [tcl] # MDI window settings
+03:50:55    1367 --> ...                                                                      [tcl] set Wave.1 Wave.1
+03:50:55    1368 --> ...                                                                          [tcl] gui_update_layout -id ${Wave.1} {{show_state maximized} {dock_state undocked} {dock_on_new_line false} {child_wave_left 539} {child_wave_right 1313} {child_wave_colname 267} {child_wave_colvalue 268} {child_wave_col1 0} {child_wave_col2 1}}
+03:50:55    1369 --> ...                                                                              [tcl] # End MDI window settings
+03:50:55    1370 --> ...                                                                                  [tcl] # Create and position top-level window: TopLevel.3
+03:50:55    1371 --> ...                                                                                      [tcl] set TopLevel.3 TopLevel.3
+03:50:55    1372 --> ...                                                                                          [tcl] # Docked window settings
+03:50:55    1373 --> ...                                                                                              [tcl] gui_sync_global -id ${TopLevel.3} -option true
+03:50:55    1374 --> ...                                                                                                  [tcl] # MDI window settings
+03:50:55    1375 --> ...  [tcl] set Wave.2 Wave.2
+03:50:55    1376 --> ...      [tcl] gui_update_layout -id ${Wave.2} {{show_state maximized} {dock_state undocked} {dock_on_new_line false} {child_wave_left 539} {child_wave_right 1313} {child_wave_colname 267} {child_wave_colvalue 267} {child_wave_col1 0} {child_wave_col2 1}}
+03:50:55    1377 --> ...          [tcl] # End MDI window settings
+03:50:55    1378 --> ...              [tcl] #</WindowLayout>
+03:50:55    1379 --> ...                  [tcl] #<Database>
+03:50:55    1380 --> ...                      [tcl] gui_set_precision 1ps
+03:50:55    1381 --> ...                          [tcl] gui_set_time_units 1ps
+03:50:55    1382 --> ...                              [tcl] #</Database>
+03:50:55    1383 --> ...                                  [tcl] # DVE Global setting session:
+03:50:55    1384 --> ...                                      [tcl] # Global: Breakpoints
+03:50:55    1385 --> ...                                          [tcl] # Global: Bus
+03:50:55    1386 --> ...                                              [tcl] # Global: Expressions
+03:50:55    1387 --> ...                                                  [tcl] # Global: Signal Time Shift
+03:50:55    1388 --> ...                                                      [tcl] # Global: Signal Compare
+03:50:55    1389 --> ...                                                          [tcl] # Global: Signal Groups
+03:50:55    1390 --> ...                                                              [tcl] gui_load_child_values {tb.dut.inst[2].portout}
+03:50:55    1391 --> ...                                                                  [tcl] synopsys::dump -add {{tb.dut.inst[2].portout}} -scope "." -depth 1 -fid VPD4
+03:50:55    1392 --> ...                                                                      [tcl] gui_load_child_values {tb.dut.inst[0].fifo}
+03:50:55    1393 --> ...                                                                          [tcl] synopsys::dump -add {{tb.dut.inst[0].fifo}} -scope "." -depth 1 -fid VPD4
+03:50:55    1394 --> ...                                                                              [tcl] gui_load_child_values {tb.dut.inst[4].mux8x1}
+03:50:55    1395 --> ...                                                                                  [tcl] synopsys::dump -add {{tb.dut.inst[4].mux8x1}} -scope "." -depth 1 -fid VPD4
+03:50:55    1396 --> ...                                                                                      [tcl] gui_load_child_values {tb.dut.inst[5].portout}
+03:50:55    1397 --> ...                                                                                          [tcl] synopsys::dump -add {{tb.dut.inst[5].portout}} -scope "." -depth 1 -fid VPD4
+03:50:55    1398 --> ...                                                                                              [tcl] gui_load_child_values {tb.dut.inst[1].mux8x1}
+03:50:55    1399 --> ...                                                                                                  [tcl] synopsys::dump -add {{tb.dut.inst[1].mux8x1}} -scope "." -depth 1 -fid VPD4
+03:50:55    1400 --> ...  [tcl] gui_load_child_values {tb.dut.inst[0].portout}
+03:50:55    1401 --> ...      [tcl] synopsys::dump -add {{tb.dut.inst[0].portout}} -scope "." -depth 1 -fid VPD4
+03:50:55    1402 --> ...          [tcl] gui_load_child_values {tb.dut.inst[1].port}
+03:50:55    1403 --> ...              [tcl] synopsys::dump -add {{tb.dut.inst[1].port}} -scope "." -depth 1 -fid VPD4
+03:50:55    1404 --> ...                  [tcl] gui_load_child_values {tb.dut.inst[3].portout}
+03:50:55    1405 --> ...                      [tcl] synopsys::dump -add {{tb.dut.inst[3].portout}} -scope "." -depth 1 -fid VPD4
+03:50:55    1406 --> ...                          [tcl] gui_load_child_values {tb.dut.inst[6].portout}
+03:50:55    1407 --> ...                              [tcl] synopsys::dump -add {{tb.dut.inst[6].portout}} -scope "." -depth 1 -fid VPD4
+03:50:55    1408 --> ...                                  [tcl] gui_load_child_values {tb.dut.inst[1].fifo}
+03:50:55    1409 --> ...                                      [tcl] synopsys::dump -add {{tb.dut.inst[1].fifo}} -scope "." -depth 1 -fid VPD4
+03:50:55    1410 --> ...                                          [tcl] gui_load_child_values {tb.dut.inst[1].portout}
+03:50:55    1411 --> ...                                              [tcl] synopsys::dump -add {{tb.dut.inst[1].portout}} -scope "." -depth 1 -fid VPD4
+03:50:55    1412 --> ...                                                  [tcl] gui_load_child_values {tb.dut.inst[4].portout}
+03:50:55    1413 --> ...                                                      [tcl] synopsys::dump -add {{tb.dut.inst[4].portout}} -scope "." -depth 1 -fid VPD4
+03:50:55    1414 --> ...                                                          [tcl] gui_load_child_values {tb.dut.inst[4].port}
+03:50:55    1415 --> ...                                                              [tcl] synopsys::dump -add {{tb.dut.inst[4].port}} -scope "." -depth 1 -fid VPD4
+03:50:55    1416 --> ...                                                                  [tcl] gui_load_child_values {tb.dut.inst[7].portout}
+03:50:55    1417 --> ...                                                                      [tcl] synopsys::dump -add {{tb.dut.inst[7].portout}} -scope "." -depth 1 -fid VPD4
+03:50:55    1418 --> ...                                                                          [tcl] gui_load_child_values {tb.dut.inst[0].mux8x1}
+03:50:55    1419 --> ...                                                                              [tcl] synopsys::dump -add {{tb.dut.inst[0].mux8x1}} -scope "." -depth 1 -fid VPD4
+03:50:55    1420 --> ...                                                                                  [tcl] gui_load_child_values {tb.dut.inst[0].port}
+03:50:55    1421 --> ...                                                                                      [tcl] synopsys::dump -add {{tb.dut.inst[0].port}} -scope "." -depth 1 -fid VPD4
+03:50:55    1422 --> ...                                                                                          [tcl] gui_load_child_values {tb.dut.inst[4].fifo}
+03:50:55    1423 --> ...                                                                                              [tcl] synopsys::dump -add {{tb.dut.inst[4].fifo}} -scope "." -depth 1 -fid VPD4
+03:50:55    1424 --> ...                                                                                                  [tcl] set _session_group_33 {inst[0].fifo}
+03:50:55    1425 --> ...  [tcl] gui_sg_create "$_session_group_33"
+03:50:55    1426 --> ...      [tcl] set {inst[0].fifo} "$_session_group_33"
+03:50:55    1427 --> ...          [tcl] gui_sg_addsignal -group "$_session_group_33" { {tb.dut.inst[0].fifo.Wait} {tb.dut.inst[0].fifo.PopReady} {tb.dut.inst[0].fifo.data_out} {tb.dut.inst[0].fifo.i} {tb.dut.inst[0].fifo.clk_pop} {tb.dut.inst[0].fifo.data_in} {tb.dut.inst[0].fifo.popState} {tb.dut.inst[0].fifo.clk_push} {tb.dut.inst[0].fifo.reset_n} {tb.dut.inst[0].fifo.head} {tb.dut.inst[0].fifo.tail} {tb.dut.inst[0].fifo.push_req_n} {tb.dut.inst[0].fifo.clear} {tb.dut.inst[0].fifo.stack} {tb.dut.inst[0].fifo.pop_req_n} {tb.dut.inst[0].fifo.$unit} }
+03:50:55    1428 --> ...              [tcl] dveMisc::vbusExpand {tb.dut.inst[0].fifo}
+03:50:55    1429 --> ...                  [tcl] gui_set_radix -radix {decimal} -signals {{Sim:tb.dut.inst[0].fifo.Wait}}
+03:50:55    1430 --> ...                      [tcl] gui_set_radix -radix {twosComplement} -signals {{Sim:tb.dut.inst[0].fifo.Wait}}
+03:50:55    1431 --> ...                          [tcl] gui_set_radix -radix {decimal} -signals {{Sim:tb.dut.inst[0].fifo.PopReady}}
+03:50:55    1432 --> ...                              [tcl] gui_set_radix -radix {twosComplement} -signals {{Sim:tb.dut.inst[0].fifo.PopReady}}
+03:50:55    1433 --> ...                                  [tcl] set _session_group_34 $_session_group_33|
+03:50:55    1434 --> ...                                      [tcl] append _session_group_34 {inst[4].portout}
+03:50:55    1435 --> ...                                          [tcl] gui_sg_create "$_session_group_34"
+03:50:55    1436 --> ...                                              [tcl] set {inst[0].fifo|inst[4].portout} "$_session_group_34"
+03:50:55    1437 --> ...                                                  [tcl] gui_sg_addsignal -group "$_session_group_34" { {tb.dut.inst[4].portout.Wait} {tb.dut.inst[4].portout.vld} {tb.dut.inst[4].portout.dout} {tb.dut.inst[4].portout.din} {tb.dut.inst[4].portout.clock} {tb.dut.inst[4].portout.cntp} {tb.dut.inst[4].portout.pop} {tb.dut.inst[4].portout.frameo_n} {tb.dut.inst[4].portout.payloadState} {tb.dut.inst[4].portout.addr} {tb.dut.inst[4].portout.reset_n} {tb.dut.inst[4].portout.valido_n} {tb.dut.inst[4].portout.validState} {tb.dut.inst[4].portout.payload} {tb.dut.inst[4].portout.$unit} {tb.dut.inst[4].portout.current_state} {tb.dut.inst[4].portout.writeout} {tb.dut.inst[4].portout.cnta} }
+03:50:55    1438 --> ...                                                      [tcl] dveMisc::vbusExpand {tb.dut.inst[4].portout}
+03:50:55    1439 --> ...                                                          [tcl] gui_set_radix -radix {decimal} -signals {{Sim:tb.dut.inst[4].portout.Wait}}
+03:50:55    1440 --> ...                                                              [tcl] gui_set_radix -radix {twosComplement} -signals {{Sim:tb.dut.inst[4].portout.Wait}}
+03:50:55    1441 --> ...                                                                  [tcl] gui_set_radix -radix {decimal} -signals {{Sim:tb.dut.inst[4].portout.payloadState}}
+03:50:55    1442 --> ...                                                                      [tcl] gui_set_radix -radix {twosComplement} -signals {{Sim:tb.dut.inst[4].portout.payloadState}}
+03:50:55    1443 --> ...                                                                          [tcl] gui_set_radix -radix {decimal} -signals {{Sim:tb.dut.inst[4].portout.addr}}
+03:50:55    1444 --> ...                                                                              [tcl] gui_set_radix -radix {twosComplement} -signals {{Sim:tb.dut.inst[4].portout.addr}}
+03:50:55    1445 --> ...                                                                                  [tcl] gui_set_radix -radix {decimal} -signals {{Sim:tb.dut.inst[4].portout.validState}}
+03:50:55    1446 --> ...                                                                                      [tcl] gui_set_radix -radix {twosComplement} -signals {{Sim:tb.dut.inst[4].portout.validState}}
+03:50:55    1447 --> ...                                                                                          [tcl] gui_set_radix -radix {decimal} -signals {{Sim:tb.dut.inst[4].portout.writeout}}
+03:50:55    1448 --> ...                                                                                              [tcl] gui_set_radix -radix {twosComplement} -signals {{Sim:tb.dut.inst[4].portout.writeout}}
+03:50:55    1449 --> ...                                                                                                  [tcl] set _session_group_35 $_session_group_33|
+03:50:55    1450 --> ...  [tcl] append _session_group_35 {inst[4].fifo}
+03:50:55    1451 --> ...      [tcl] gui_sg_create "$_session_group_35"
+03:50:55    1452 --> ...          [tcl] set {inst[0].fifo|inst[4].fifo} "$_session_group_35"
+03:50:55    1453 --> ...              [tcl] gui_sg_addsignal -group "$_session_group_35" { {tb.dut.inst[4].fifo.Wait} {tb.dut.inst[4].fifo.head} {tb.dut.inst[4].fifo.PopReady} {tb.dut.inst[4].fifo.data_out} {tb.dut.inst[4].fifo.i} {tb.dut.inst[4].fifo.clk_pop} {tb.dut.inst[4].fifo.data_in} {tb.dut.inst[4].fifo.popState} {tb.dut.inst[4].fifo.clk_push} {tb.dut.inst[4].fifo.reset_n} {tb.dut.inst[4].fifo.tail} {tb.dut.inst[4].fifo.push_req_n} {tb.dut.inst[4].fifo.clear} {tb.dut.inst[4].fifo.stack} {tb.dut.inst[4].fifo.pop_req_n} {tb.dut.inst[4].fifo.$unit} }
+03:50:55    1454 --> ...                  [tcl] dveMisc::vbusExpand {tb.dut.inst[4].fifo}
+03:50:55    1455 --> ...                      [tcl] gui_set_radix -radix {decimal} -signals {{Sim:tb.dut.inst[4].fifo.Wait}}
+03:50:55    1456 --> ...                          [tcl] gui_set_radix -radix {twosComplement} -signals {{Sim:tb.dut.inst[4].fifo.Wait}}
+03:50:55    1457 --> ...                              [tcl] gui_set_radix -radix {decimal} -signals {{Sim:tb.dut.inst[4].fifo.head}}
+03:50:55    1458 --> ...                                  [tcl] gui_set_radix -radix {twosComplement} -signals {{Sim:tb.dut.inst[4].fifo.head}}
+03:50:55    1459 --> ...                                      [tcl] gui_set_radix -radix {decimal} -signals {{Sim:tb.dut.inst[4].fifo.PopReady}}
+03:50:55    1460 --> ...                                          [tcl] gui_set_radix -radix {twosComplement} -signals {{Sim:tb.dut.inst[4].fifo.PopReady}}
+03:50:55    1461 --> ...                                              [tcl] gui_sg_move "$_session_group_35" -after "$_session_group_33" -pos 1
+03:50:55    1462 --> ...                                                  [tcl] set _session_group_36 $_session_group_33|
+03:50:55    1463 --> ...                                                      [tcl] append _session_group_36 {inst[4].port}
+03:50:55    1464 --> ...                                                          [tcl] gui_sg_create "$_session_group_36"
+03:50:55    1465 --> ...                                                              [tcl] set {inst[0].fifo|inst[4].port} "$_session_group_36"
+03:50:55    1466 --> ...                                                                  [tcl] gui_sg_addsignal -group "$_session_group_36" { {tb.dut.inst[4].port.clock} {tb.dut.inst[4].port.reset_n} {tb.dut.inst[4].port.frame_n} {tb.dut.inst[4].port.valid_n} {tb.dut.inst[4].port.di} {tb.dut.inst[4].port.clr} {tb.dut.inst[4].port.payload} {tb.dut.inst[4].port.addr} {tb.dut.inst[4].port.vld} {tb.dut.inst[4].port.cnta} {tb.dut.inst[4].port.cntp} {tb.dut.inst[4].port.$unit} }
+03:50:55    1467 --> ...                                                                      [tcl] dveMisc::vbusExpand {tb.dut.inst[4].port}
+03:50:55    1468 --> ...                                                                          [tcl] gui_sg_move "$_session_group_36" -after "$_session_group_33" -pos 3
+03:50:55    1469 --> ...                                                                              [tcl] set _session_group_37 $_session_group_33|
+03:50:55    1470 --> ...                                                                                  [tcl] append _session_group_37 {inst[4].mux8x1}
+03:50:55    1471 --> ...                                                                                      [tcl] gui_sg_create "$_session_group_37"
+03:50:55    1472 --> ...                                                                                          [tcl] set {inst[0].fifo|inst[4].mux8x1} "$_session_group_37"
+03:50:55    1473 --> ...                                                                                              [tcl] gui_sg_addsignal -group "$_session_group_37" { {tb.dut.inst[4].mux8x1.vld_from_input} {tb.dut.inst[4].mux8x1.clock} {tb.dut.inst[4].mux8x1.reset_n} {tb.dut.inst[4].mux8x1.clr} {tb.dut.inst[4].mux8x1.x} {tb.dut.inst[4].mux8x1.valid_from_mux} {tb.dut.inst[4].mux8x1.datout} {tb.dut.inst[4].mux8x1.addr_from_input} {tb.dut.inst[4].mux8x1.datain} {tb.dut.inst[4].mux8x1.i} {tb.dut.inst[4].mux8x1.current_state} {tb.dut.inst[4].mux8x1.readenable} {tb.dut.inst[4].mux8x1.validState} {tb.dut.inst[4].mux8x1.$unit} }
+03:50:55    1474 --> ...                                                                                                  [tcl] dveMisc::vbusExpand {tb.dut.inst[4].mux8x1}
+03:50:55    1475 --> ...  [tcl] gui_set_radix -radix {decimal} -signals {{Sim:tb.dut.inst[4].mux8x1.readenable}}
+03:50:55    1476 --> ...      [tcl] gui_set_radix -radix {twosComplement} -signals {{Sim:tb.dut.inst[4].mux8x1.readenable}}
+03:50:55    1477 --> ...          [tcl] gui_set_radix -radix {decimal} -signals {{Sim:tb.dut.inst[4].mux8x1.validState}}
+03:50:55    1478 --> ...              [tcl] gui_set_radix -radix {twosComplement} -signals {{Sim:tb.dut.inst[4].mux8x1.validState}}
+03:50:55    1479 --> ...                  [tcl] gui_sg_move "$_session_group_37" -after "$_session_group_33" -pos 5
+03:50:55    1480 --> ...                      [tcl] set _session_group_38 {inst[0].portout}
+03:50:55    1481 --> ...                          [tcl] gui_sg_create "$_session_group_38"
+03:50:55    1482 --> ...                              [tcl] set {inst[0].portout} "$_session_group_38"
+03:50:55    1483 --> ...                                  [tcl] gui_sg_addsignal -group "$_session_group_38" { {tb.dut.inst[0].portout.clock} {tb.dut.inst[0].portout.vld} {tb.dut.inst[0].portout.reset_n} {tb.dut.inst[0].portout.din} {tb.dut.inst[0].portout.dout} {tb.dut.inst[0].portout.frameo_n} {tb.dut.inst[0].portout.valido_n} {tb.dut.inst[0].portout.pop} {tb.dut.inst[0].portout.cntp} {tb.dut.inst[0].portout.cnta} {tb.dut.inst[0].portout.payload} {tb.dut.inst[0].portout.current_state} {tb.dut.inst[0].portout.Wait} {tb.dut.inst[0].portout.validState} {tb.dut.inst[0].portout.payloadState} {tb.dut.inst[0].portout.addr} {tb.dut.inst[0].portout.writeout} {tb.dut.inst[0].portout.$unit} }
+03:50:55    1484 --> ...                                      [tcl] dveMisc::vbusExpand {tb.dut.inst[0].portout}
+03:50:55    1485 --> ...                                          [tcl] gui_set_radix -radix {decimal} -signals {{Sim:tb.dut.inst[0].portout.Wait}}
+03:50:55    1486 --> ...                                              [tcl] gui_set_radix -radix {twosComplement} -signals {{Sim:tb.dut.inst[0].portout.Wait}}
+03:50:55    1487 --> ...                                                  [tcl] gui_set_radix -radix {decimal} -signals {{Sim:tb.dut.inst[0].portout.validState}}
+03:50:55    1488 --> ...                                                      [tcl] gui_set_radix -radix {twosComplement} -signals {{Sim:tb.dut.inst[0].portout.validState}}
+03:50:55    1489 --> ...                                                          [tcl] gui_set_radix -radix {decimal} -signals {{Sim:tb.dut.inst[0].portout.payloadState}}
+03:50:55    1490 --> ...                                                              [tcl] gui_set_radix -radix {twosComplement} -signals {{Sim:tb.dut.inst[0].portout.payloadState}}
+03:50:55    1491 --> ...                                                                  [tcl] gui_set_radix -radix {decimal} -signals {{Sim:tb.dut.inst[0].portout.addr}}
+03:50:55    1492 --> ...                                                                      [tcl] gui_set_radix -radix {twosComplement} -signals {{Sim:tb.dut.inst[0].portout.addr}}
+03:50:55    1493 --> ...                                                                          [tcl] gui_set_radix -radix {decimal} -signals {{Sim:tb.dut.inst[0].portout.writeout}}
+03:50:55    1494 --> ...                                                                              [tcl] gui_set_radix -radix {twosComplement} -signals {{Sim:tb.dut.inst[0].portout.writeout}}
+03:50:55    1495 --> ...                                                                                  [tcl] set _session_group_39 {inst[0].mux8x1}
+03:50:55    1496 --> ...                                                                                      [tcl] gui_sg_create "$_session_group_39"
+03:50:55    1497 --> ...                                                                                          [tcl] set {inst[0].mux8x1} "$_session_group_39"
+03:50:55    1498 --> ...                                                                                              [tcl] gui_sg_addsignal -group "$_session_group_39" { {tb.dut.inst[0].mux8x1.vld_from_input} {tb.dut.inst[0].mux8x1.clock} {tb.dut.inst[0].mux8x1.reset_n} {tb.dut.inst[0].mux8x1.clr} {tb.dut.inst[0].mux8x1.x} {tb.dut.inst[0].mux8x1.valid_from_mux} {tb.dut.inst[0].mux8x1.datout} {tb.dut.inst[0].mux8x1.addr_from_input} {tb.dut.inst[0].mux8x1.datain} {tb.dut.inst[0].mux8x1.i} {tb.dut.inst[0].mux8x1.current_state} {tb.dut.inst[0].mux8x1.readenable} {tb.dut.inst[0].mux8x1.validState} {tb.dut.inst[0].mux8x1.$unit} }
+03:50:55    1499 --> ...                                                                                                  [tcl] dveMisc::vbusExpand {tb.dut.inst[0].mux8x1}
+03:50:55    1500 --> ...  [tcl] gui_set_radix -radix {decimal} -signals {{Sim:tb.dut.inst[0].mux8x1.readenable}}
+03:50:55    1501 --> ...      [tcl] gui_set_radix -radix {twosComplement} -signals {{Sim:tb.dut.inst[0].mux8x1.readenable}}
+03:50:55    1502 --> ...          [tcl] gui_set_radix -radix {decimal} -signals {{Sim:tb.dut.inst[0].mux8x1.validState}}
+03:50:55    1503 --> ...              [tcl] gui_set_radix -radix {twosComplement} -signals {{Sim:tb.dut.inst[0].mux8x1.validState}}
+03:50:55    1504 --> ...                  [tcl] set _session_group_40 {inst[0].port}
+03:50:55    1505 --> ...                      [tcl] gui_sg_create "$_session_group_40"
+03:50:55    1506 --> ...                          [tcl] set {inst[0].port} "$_session_group_40"
+03:50:55    1507 --> ...                              [tcl] gui_sg_addsignal -group "$_session_group_40" { {tb.dut.inst[0].port.clock} {tb.dut.inst[0].port.reset_n} {tb.dut.inst[0].port.frame_n} {tb.dut.inst[0].port.valid_n} {tb.dut.inst[0].port.di} {tb.dut.inst[0].port.clr} {tb.dut.inst[0].port.payload} {tb.dut.inst[0].port.addr} {tb.dut.inst[0].port.vld} {tb.dut.inst[0].port.cnta} {tb.dut.inst[0].port.cntp} {tb.dut.inst[0].port.$unit} }
+03:50:55    1508 --> ...                                  [tcl] dveMisc::vbusExpand {tb.dut.inst[0].port}
+03:50:55    1509 --> ...                                      [tcl] set _session_group_41 {inst[1].fifo}
+03:50:55    1510 --> ...                                          [tcl] gui_sg_create "$_session_group_41"
+03:50:55    1511 --> ...                                              [tcl] set {inst[1].fifo} "$_session_group_41"
+03:50:55    1512 --> ...                                                  [tcl] gui_sg_addsignal -group "$_session_group_41" { {tb.dut.inst[1].fifo.clk_push} {tb.dut.inst[1].fifo.clk_pop} {tb.dut.inst[1].fifo.reset_n} {tb.dut.inst[1].fifo.push_req_n} {tb.dut.inst[1].fifo.pop_req_n} {tb.dut.inst[1].fifo.data_in} {tb.dut.inst[1].fifo.clear} {tb.dut.inst[1].fifo.data_out} {tb.dut.inst[1].fifo.head} {tb.dut.inst[1].fifo.tail} {tb.dut.inst[1].fifo.i} {tb.dut.inst[1].fifo.popState} {tb.dut.inst[1].fifo.stack} {tb.dut.inst[1].fifo.PopReady} {tb.dut.inst[1].fifo.Wait} {tb.dut.inst[1].fifo.$unit} }
+03:50:55    1513 --> ...                                                      [tcl] dveMisc::vbusExpand {tb.dut.inst[1].fifo}
+03:50:55    1514 --> ...                                                          [tcl] gui_set_radix -radix {decimal} -signals {{Sim:tb.dut.inst[1].fifo.PopReady}}
+03:50:55    1515 --> ...                                                              [tcl] gui_set_radix -radix {twosComplement} -signals {{Sim:tb.dut.inst[1].fifo.PopReady}}
+03:50:55    1516 --> ...                                                                  [tcl] gui_set_radix -radix {decimal} -signals {{Sim:tb.dut.inst[1].fifo.Wait}}
+03:50:55    1517 --> ...                                                                      [tcl] gui_set_radix -radix {twosComplement} -signals {{Sim:tb.dut.inst[1].fifo.Wait}}
+03:50:55    1518 --> ...                                                                          [tcl] set _session_group_42 {inst[1].mux8x1}
+03:50:55    1519 --> ...                                                                              [tcl] gui_sg_create "$_session_group_42"
+03:50:55    1520 --> ...                                                                                  [tcl] set {inst[1].mux8x1} "$_session_group_42"
+03:50:55    1521 --> ...                                                                                      [tcl] gui_sg_addsignal -group "$_session_group_42" { {tb.dut.inst[1].mux8x1.vld_from_input} {tb.dut.inst[1].mux8x1.clock} {tb.dut.inst[1].mux8x1.reset_n} {tb.dut.inst[1].mux8x1.clr} {tb.dut.inst[1].mux8x1.x} {tb.dut.inst[1].mux8x1.valid_from_mux} {tb.dut.inst[1].mux8x1.datout} {tb.dut.inst[1].mux8x1.addr_from_input} {tb.dut.inst[1].mux8x1.datain} {tb.dut.inst[1].mux8x1.i} {tb.dut.inst[1].mux8x1.current_state} {tb.dut.inst[1].mux8x1.readenable} {tb.dut.inst[1].mux8x1.validState} {tb.dut.inst[1].mux8x1.$unit} }
+03:50:55    1522 --> ...                                                                                          [tcl] dveMisc::vbusExpand {tb.dut.inst[1].mux8x1}
+03:50:55    1523 --> ...                                                                                              [tcl] gui_set_radix -radix {decimal} -signals {{Sim:tb.dut.inst[1].mux8x1.readenable}}
+03:50:55    1524 --> ...                                                                                                  [tcl] gui_set_radix -radix {twosComplement} -signals {{Sim:tb.dut.inst[1].mux8x1.readenable}}
+03:50:55    1525 --> ...  [tcl] gui_set_radix -radix {decimal} -signals {{Sim:tb.dut.inst[1].mux8x1.validState}}
+03:50:55    1526 --> ...      [tcl] gui_set_radix -radix {twosComplement} -signals {{Sim:tb.dut.inst[1].mux8x1.validState}}
+03:50:55    1527 --> ...          [tcl] set _session_group_43 {inst[1].port}
+03:50:55    1528 --> ...              [tcl] gui_sg_create "$_session_group_43"
+03:50:55    1529 --> ...                  [tcl] set {inst[1].port} "$_session_group_43"
+03:50:55    1530 --> ...                      [tcl] gui_sg_addsignal -group "$_session_group_43" { {tb.dut.inst[1].port.clock} {tb.dut.inst[1].port.reset_n} {tb.dut.inst[1].port.frame_n} {tb.dut.inst[1].port.valid_n} {tb.dut.inst[1].port.di} {tb.dut.inst[1].port.clr} {tb.dut.inst[1].port.payload} {tb.dut.inst[1].port.addr} {tb.dut.inst[1].port.vld} {tb.dut.inst[1].port.cnta} {tb.dut.inst[1].port.cntp} {tb.dut.inst[1].port.$unit} }
+03:50:56    1531 --> ...                          [tcl] dveMisc::vbusExpand {tb.dut.inst[1].port}
+03:50:56    1532 --> ...                              [tcl] set _session_group_44 {inst[1].portout}
+03:50:56    1533 --> ...                                  [tcl] gui_sg_create "$_session_group_44"
+03:50:56    1534 --> ...                                      [tcl] set {inst[1].portout} "$_session_group_44"
+03:50:56    1535 --> ...                                          [tcl] gui_sg_addsignal -group "$_session_group_44" { {tb.dut.inst[1].portout.Wait} {tb.dut.inst[1].portout.vld} {tb.dut.inst[1].portout.dout} {tb.dut.inst[1].portout.din} {tb.dut.inst[1].portout.clock} {tb.dut.inst[1].portout.cntp} {tb.dut.inst[1].portout.pop} {tb.dut.inst[1].portout.frameo_n} {tb.dut.inst[1].portout.payloadState} {tb.dut.inst[1].portout.addr} {tb.dut.inst[1].portout.reset_n} {tb.dut.inst[1].portout.valido_n} {tb.dut.inst[1].portout.validState} {tb.dut.inst[1].portout.payload} {tb.dut.inst[1].portout.$unit} {tb.dut.inst[1].portout.current_state} {tb.dut.inst[1].portout.writeout} {tb.dut.inst[1].portout.cnta} }
+03:50:56    1536 --> ...                                              [tcl] dveMisc::vbusExpand {tb.dut.inst[1].portout}
+03:50:56    1537 --> ...                                                  [tcl] gui_set_radix -radix {decimal} -signals {{Sim:tb.dut.inst[1].portout.Wait}}
+03:50:56    1538 --> ...                                                      [tcl] gui_set_radix -radix {twosComplement} -signals {{Sim:tb.dut.inst[1].portout.Wait}}
+03:50:56    1539 --> ...                                                          [tcl] gui_set_radix -radix {decimal} -signals {{Sim:tb.dut.inst[1].portout.payloadState}}
+03:50:56    1540 --> ...                                                              [tcl] gui_set_radix -radix {twosComplement} -signals {{Sim:tb.dut.inst[1].portout.payloadState}}
+03:50:56    1541 --> ...                                                                  [tcl] gui_set_radix -radix {decimal} -signals {{Sim:tb.dut.inst[1].portout.addr}}
+03:50:56    1542 --> ...                                                                      [tcl] gui_set_radix -radix {twosComplement} -signals {{Sim:tb.dut.inst[1].portout.addr}}
+03:50:56    1543 --> ...                                                                          [tcl] gui_set_radix -radix {decimal} -signals {{Sim:tb.dut.inst[1].portout.validState}}
+03:50:56    1544 --> ...                                                                              [tcl] gui_set_radix -radix {twosComplement} -signals {{Sim:tb.dut.inst[1].portout.validState}}
+03:50:56    1545 --> ...                                                                                  [tcl] gui_set_radix -radix {decimal} -signals {{Sim:tb.dut.inst[1].portout.writeout}}
+03:50:56    1546 --> ...                                                                                      [tcl] gui_set_radix -radix {twosComplement} -signals {{Sim:tb.dut.inst[1].portout.writeout}}
+03:50:56    1547 --> ...                                                                                          [tcl] set _session_group_45 {inst[0].portout_1}
+03:50:56    1548 --> ...                                                                                              [tcl] gui_sg_create "$_session_group_45"
+03:50:56    1549 --> ...                                                                                                  [tcl] set {inst[0].portout_1} "$_session_group_45"
+03:50:56    1550 --> ...  [tcl] gui_sg_addsignal -group "$_session_group_45" { {tb.dut.inst[0].portout.Wait} {tb.dut.inst[0].portout.vld} {tb.dut.inst[0].portout.dout} {tb.dut.inst[0].portout.din} {tb.dut.inst[0].portout.clock} {tb.dut.inst[0].portout.cntp} {tb.dut.inst[0].portout.pop} {tb.dut.inst[0].portout.frameo_n} {tb.dut.inst[0].portout.payloadState} {tb.dut.inst[0].portout.addr} {tb.dut.inst[0].portout.reset_n} {tb.dut.inst[0].portout.valido_n} {tb.dut.inst[0].portout.validState} {tb.dut.inst[0].portout.payload} {tb.dut.inst[0].portout.$unit} {tb.dut.inst[0].portout.current_state} {tb.dut.inst[0].portout.writeout} {tb.dut.inst[0].portout.cnta} }
+03:50:56    1551 --> ...      [tcl] gui_set_radix -radix {decimal} -signals {{Sim:tb.dut.inst[0].portout.Wait}}
+03:50:56    1552 --> ...          [tcl] gui_set_radix -radix {twosComplement} -signals {{Sim:tb.dut.inst[0].portout.Wait}}
+03:50:56    1553 --> ...              [tcl] gui_set_radix -radix {decimal} -signals {{Sim:tb.dut.inst[0].portout.payloadState}}
+03:50:56    1554 --> ...                  [tcl] gui_set_radix -radix {twosComplement} -signals {{Sim:tb.dut.inst[0].portout.payloadState}}
+03:50:56    1555 --> ...                      [tcl] gui_set_radix -radix {decimal} -signals {{Sim:tb.dut.inst[0].portout.addr}}
+03:50:56    1556 --> ...                          [tcl] gui_set_radix -radix {twosComplement} -signals {{Sim:tb.dut.inst[0].portout.addr}}
+03:50:56    1557 --> ...                              [tcl] gui_set_radix -radix {decimal} -signals {{Sim:tb.dut.inst[0].portout.validState}}
+03:50:56    1558 --> ...                                  [tcl] gui_set_radix -radix {twosComplement} -signals {{Sim:tb.dut.inst[0].portout.validState}}
+03:50:56    1559 --> ...                                      [tcl] gui_set_radix -radix {decimal} -signals {{Sim:tb.dut.inst[0].portout.writeout}}
+03:50:56    1560 --> ...                                          [tcl] gui_set_radix -radix {twosComplement} -signals {{Sim:tb.dut.inst[0].portout.writeout}}
+03:50:56    1561 --> ...                                              [tcl] set _session_group_46 {inst[1].portout_1}
+03:50:56    1562 --> ...                                                  [tcl] gui_sg_create "$_session_group_46"
+03:50:56    1563 --> ...                                                      [tcl] set {inst[1].portout_1} "$_session_group_46"
+03:50:56    1564 --> ...                                                          [tcl] gui_sg_addsignal -group "$_session_group_46" { {tb.dut.inst[1].portout.Wait} {tb.dut.inst[1].portout.vld} {tb.dut.inst[1].portout.clock} {tb.dut.inst[1].portout.din} {tb.dut.inst[1].portout.dout} {tb.dut.inst[1].portout.cntp} {tb.dut.inst[1].portout.pop} {tb.dut.inst[1].portout.frameo_n} {tb.dut.inst[1].portout.payloadState} {tb.dut.inst[1].portout.addr} {tb.dut.inst[1].portout.reset_n} {tb.dut.inst[1].portout.valido_n} {tb.dut.inst[1].portout.validState} {tb.dut.inst[1].portout.payload} {tb.dut.inst[1].portout.$unit} {tb.dut.inst[1].portout.current_state} {tb.dut.inst[1].portout.writeout} {tb.dut.inst[1].portout.cnta} }
+03:50:56    1565 --> ...                                                              [tcl] gui_set_radix -radix {decimal} -signals {{Sim:tb.dut.inst[1].portout.Wait}}
+03:50:56    1566 --> ...                                                                  [tcl] gui_set_radix -radix {twosComplement} -signals {{Sim:tb.dut.inst[1].portout.Wait}}
+03:50:56    1567 --> ...                                                                      [tcl] gui_set_radix -radix {decimal} -signals {{Sim:tb.dut.inst[1].portout.payloadState}}
+03:50:56    1568 --> ...                                                                          [tcl] gui_set_radix -radix {twosComplement} -signals {{Sim:tb.dut.inst[1].portout.payloadState}}
+03:50:56    1569 --> ...                                                                              [tcl] gui_set_radix -radix {decimal} -signals {{Sim:tb.dut.inst[1].portout.addr}}
+03:50:56    1570 --> ...                                                                                  [tcl] gui_set_radix -radix {twosComplement} -signals {{Sim:tb.dut.inst[1].portout.addr}}
+03:50:56    1571 --> ...                                                                                      [tcl] gui_set_radix -radix {decimal} -signals {{Sim:tb.dut.inst[1].portout.validState}}
+03:50:56    1572 --> ...                                                                                          [tcl] gui_set_radix -radix {twosComplement} -signals {{Sim:tb.dut.inst[1].portout.validState}}
+03:50:56    1573 --> ...                                                                                              [tcl] gui_set_radix -radix {decimal} -signals {{Sim:tb.dut.inst[1].portout.writeout}}
+03:50:56    1574 --> ...                                                                                                  [tcl] gui_set_radix -radix {twosComplement} -signals {{Sim:tb.dut.inst[1].portout.writeout}}
+03:50:56    1575 --> ...  [tcl] set _session_group_47 {inst[2].portout}
+03:50:56    1576 --> ...      [tcl] gui_sg_create "$_session_group_47"
+03:50:56    1577 --> ...          [tcl] set {inst[2].portout} "$_session_group_47"
+03:50:56    1578 --> ...              [tcl] gui_sg_addsignal -group "$_session_group_47" { {tb.dut.inst[2].portout.Wait} {tb.dut.inst[2].portout.vld} {tb.dut.inst[2].portout.dout} {tb.dut.inst[2].portout.din} {tb.dut.inst[2].portout.clock} {tb.dut.inst[2].portout.cntp} {tb.dut.inst[2].portout.pop} {tb.dut.inst[2].portout.frameo_n} {tb.dut.inst[2].portout.payloadState} {tb.dut.inst[2].portout.addr} {tb.dut.inst[2].portout.reset_n} {tb.dut.inst[2].portout.valido_n} {tb.dut.inst[2].portout.validState} {tb.dut.inst[2].portout.payload} {tb.dut.inst[2].portout.$unit} {tb.dut.inst[2].portout.current_state} {tb.dut.inst[2].portout.writeout} {tb.dut.inst[2].portout.cnta} }
+03:50:56    1579 --> ...                  [tcl] dveMisc::vbusExpand {tb.dut.inst[2].portout}
+03:50:56    1580 --> ...                      [tcl] gui_set_radix -radix {decimal} -signals {{Sim:tb.dut.inst[2].portout.Wait}}
+03:50:56    1581 --> ...                          [tcl] gui_set_radix -radix {twosComplement} -signals {{Sim:tb.dut.inst[2].portout.Wait}}
+03:50:56    1582 --> ...                              [tcl] gui_set_radix -radix {decimal} -signals {{Sim:tb.dut.inst[2].portout.payloadState}}
+03:50:56    1583 --> ...                                  [tcl] gui_set_radix -radix {twosComplement} -signals {{Sim:tb.dut.inst[2].portout.payloadState}}
+03:50:56    1584 --> ...                                      [tcl] gui_set_radix -radix {decimal} -signals {{Sim:tb.dut.inst[2].portout.addr}}
+03:50:56    1585 --> ...                                          [tcl] gui_set_radix -radix {twosComplement} -signals {{Sim:tb.dut.inst[2].portout.addr}}
+03:50:56    1586 --> ...                                              [tcl] gui_set_radix -radix {decimal} -signals {{Sim:tb.dut.inst[2].portout.validState}}
+03:50:56    1587 --> ...                                                  [tcl] gui_set_radix -radix {twosComplement} -signals {{Sim:tb.dut.inst[2].portout.validState}}
+03:50:56    1588 --> ...                                                      [tcl] gui_set_radix -radix {decimal} -signals {{Sim:tb.dut.inst[2].portout.writeout}}
+03:50:56    1589 --> ...                                                          [tcl] gui_set_radix -radix {twosComplement} -signals {{Sim:tb.dut.inst[2].portout.writeout}}
+03:50:56    1590 --> ...                                                              [tcl] set _session_group_48 {inst[3].portout}
+03:50:56    1591 --> ...                                                                  [tcl] gui_sg_create "$_session_group_48"
+03:50:56    1592 --> ...                                                                      [tcl] set {inst[3].portout} "$_session_group_48"
+03:50:56    1593 --> ...                                                                          [tcl] gui_sg_addsignal -group "$_session_group_48" { {tb.dut.inst[3].portout.Wait} {tb.dut.inst[3].portout.vld} {tb.dut.inst[3].portout.dout} {tb.dut.inst[3].portout.din} {tb.dut.inst[3].portout.clock} {tb.dut.inst[3].portout.cntp} {tb.dut.inst[3].portout.pop} {tb.dut.inst[3].portout.frameo_n} {tb.dut.inst[3].portout.payloadState} {tb.dut.inst[3].portout.addr} {tb.dut.inst[3].portout.reset_n} {tb.dut.inst[3].portout.valido_n} {tb.dut.inst[3].portout.validState} {tb.dut.inst[3].portout.payload} {tb.dut.inst[3].portout.$unit} {tb.dut.inst[3].portout.current_state} {tb.dut.inst[3].portout.writeout} {tb.dut.inst[3].portout.cnta} }
+03:50:56    1594 --> ...                                                                              [tcl] dveMisc::vbusExpand {tb.dut.inst[3].portout}
+03:50:56    1595 --> ...                                                                                  [tcl] gui_set_radix -radix {decimal} -signals {{Sim:tb.dut.inst[3].portout.Wait}}
+03:50:56    1596 --> ...                                                                                      [tcl] gui_set_radix -radix {twosComplement} -signals {{Sim:tb.dut.inst[3].portout.Wait}}
+03:50:56    1597 --> ...                                                                                          [tcl] gui_set_radix -radix {decimal} -signals {{Sim:tb.dut.inst[3].portout.payloadState}}
+03:50:56    1598 --> ...                                                                                              [tcl] gui_set_radix -radix {twosComplement} -signals {{Sim:tb.dut.inst[3].portout.payloadState}}
+03:50:56    1599 --> ...                                                                                                  [tcl] gui_set_radix -radix {decimal} -signals {{Sim:tb.dut.inst[3].portout.addr}}
+03:50:56    1600 --> ...  [tcl] gui_set_radix -radix {twosComplement} -signals {{Sim:tb.dut.inst[3].portout.addr}}
+03:50:56    1601 --> ...      [tcl] gui_set_radix -radix {decimal} -signals {{Sim:tb.dut.inst[3].portout.validState}}
+03:50:56    1602 --> ...          [tcl] gui_set_radix -radix {twosComplement} -signals {{Sim:tb.dut.inst[3].portout.validState}}
+03:50:56    1603 --> ...              [tcl] gui_set_radix -radix {decimal} -signals {{Sim:tb.dut.inst[3].portout.writeout}}
+03:50:56    1604 --> ...                  [tcl] gui_set_radix -radix {twosComplement} -signals {{Sim:tb.dut.inst[3].portout.writeout}}
+03:50:56    1605 --> ...                      [tcl] set _session_group_49 {inst[4].portout}
+03:50:56    1606 --> ...                          [tcl] gui_sg_create "$_session_group_49"
+03:50:56    1607 --> ...                              [tcl] set {inst[4].portout} "$_session_group_49"
+03:50:56    1608 --> ...                                  [tcl] gui_sg_addsignal -group "$_session_group_49" { {tb.dut.inst[4].portout.Wait} {tb.dut.inst[4].portout.vld} {tb.dut.inst[4].portout.clock} {tb.dut.inst[4].portout.din} {tb.dut.inst[4].portout.dout} {tb.dut.inst[4].portout.cntp} {tb.dut.inst[4].portout.pop} {tb.dut.inst[4].portout.frameo_n} {tb.dut.inst[4].portout.payloadState} {tb.dut.inst[4].portout.addr} {tb.dut.inst[4].portout.reset_n} {tb.dut.inst[4].portout.valido_n} {tb.dut.inst[4].portout.validState} {tb.dut.inst[4].portout.payload} {tb.dut.inst[4].portout.$unit} {tb.dut.inst[4].portout.current_state} {tb.dut.inst[4].portout.writeout} {tb.dut.inst[4].portout.cnta} }
+03:50:56    1609 --> ...                                      [tcl] gui_set_radix -radix {decimal} -signals {{Sim:tb.dut.inst[4].portout.Wait}}
+03:50:56    1610 --> ...                                          [tcl] gui_set_radix -radix {twosComplement} -signals {{Sim:tb.dut.inst[4].portout.Wait}}
+03:50:56    1611 --> ...                                              [tcl] gui_set_radix -radix {decimal} -signals {{Sim:tb.dut.inst[4].portout.payloadState}}
+03:50:56    1612 --> ...                                                  [tcl] gui_set_radix -radix {twosComplement} -signals {{Sim:tb.dut.inst[4].portout.payloadState}}
+03:50:56    1613 --> ...                                                      [tcl] gui_set_radix -radix {decimal} -signals {{Sim:tb.dut.inst[4].portout.addr}}
+03:50:56    1614 --> ...                                                          [tcl] gui_set_radix -radix {twosComplement} -signals {{Sim:tb.dut.inst[4].portout.addr}}
+03:50:56    1615 --> ...                                                              [tcl] gui_set_radix -radix {decimal} -signals {{Sim:tb.dut.inst[4].portout.validState}}
+03:50:56    1616 --> ...                                                                  [tcl] gui_set_radix -radix {twosComplement} -signals {{Sim:tb.dut.inst[4].portout.validState}}
+03:50:56    1617 --> ...                                                                      [tcl] gui_set_radix -radix {decimal} -signals {{Sim:tb.dut.inst[4].portout.writeout}}
+03:50:56    1618 --> ...                                                                          [tcl] gui_set_radix -radix {twosComplement} -signals {{Sim:tb.dut.inst[4].portout.writeout}}
+03:50:56    1619 --> ...                                                                              [tcl] set _session_group_50 {inst[5].portout}
+03:50:56    1620 --> ...                                                                                  [tcl] gui_sg_create "$_session_group_50"
+03:50:56    1621 --> ...                                                                                      [tcl] set {inst[5].portout} "$_session_group_50"
+03:50:56    1622 --> ...                                                                                          [tcl] gui_sg_addsignal -group "$_session_group_50" { {tb.dut.inst[5].portout.Wait} {tb.dut.inst[5].portout.vld} {tb.dut.inst[5].portout.dout} {tb.dut.inst[5].portout.din} {tb.dut.inst[5].portout.clock} {tb.dut.inst[5].portout.cntp} {tb.dut.inst[5].portout.pop} {tb.dut.inst[5].portout.frameo_n} {tb.dut.inst[5].portout.payloadState} {tb.dut.inst[5].portout.addr} {tb.dut.inst[5].portout.reset_n} {tb.dut.inst[5].portout.valido_n} {tb.dut.inst[5].portout.validState} {tb.dut.inst[5].portout.payload} {tb.dut.inst[5].portout.$unit} {tb.dut.inst[5].portout.current_state} {tb.dut.inst[5].portout.writeout} {tb.dut.inst[5].portout.cnta} }
+03:50:56    1623 --> ...                                                                                              [tcl] dveMisc::vbusExpand {tb.dut.inst[5].portout}
+03:50:56    1624 --> ...                                                                                                  [tcl] gui_set_radix -radix {decimal} -signals {{Sim:tb.dut.inst[5].portout.Wait}}
+03:50:56    1625 --> ...  [tcl] gui_set_radix -radix {twosComplement} -signals {{Sim:tb.dut.inst[5].portout.Wait}}
+03:50:56    1626 --> ...      [tcl] gui_set_radix -radix {decimal} -signals {{Sim:tb.dut.inst[5].portout.payloadState}}
+03:50:56    1627 --> ...          [tcl] gui_set_radix -radix {twosComplement} -signals {{Sim:tb.dut.inst[5].portout.payloadState}}
+03:50:56    1628 --> ...              [tcl] gui_set_radix -radix {decimal} -signals {{Sim:tb.dut.inst[5].portout.addr}}
+03:50:56    1629 --> ...                  [tcl] gui_set_radix -radix {twosComplement} -signals {{Sim:tb.dut.inst[5].portout.addr}}
+03:50:56    1630 --> ...                      [tcl] gui_set_radix -radix {decimal} -signals {{Sim:tb.dut.inst[5].portout.validState}}
+03:50:56    1631 --> ...                          [tcl] gui_set_radix -radix {twosComplement} -signals {{Sim:tb.dut.inst[5].portout.validState}}
+03:50:56    1632 --> ...                              [tcl] gui_set_radix -radix {decimal} -signals {{Sim:tb.dut.inst[5].portout.writeout}}
+03:50:56    1633 --> ...                                  [tcl] gui_set_radix -radix {twosComplement} -signals {{Sim:tb.dut.inst[5].portout.writeout}}
+03:50:56    1634 --> ...                                      [tcl] set _session_group_51 {inst[6].portout}
+03:50:56    1635 --> ...                                          [tcl] gui_sg_create "$_session_group_51"
+03:50:56    1636 --> ...                                              [tcl] set {inst[6].portout} "$_session_group_51"
+03:50:56    1637 --> ...                                                  [tcl] gui_sg_addsignal -group "$_session_group_51" { {tb.dut.inst[6].portout.Wait} {tb.dut.inst[6].portout.vld} {tb.dut.inst[6].portout.dout} {tb.dut.inst[6].portout.din} {tb.dut.inst[6].portout.clock} {tb.dut.inst[6].portout.cntp} {tb.dut.inst[6].portout.pop} {tb.dut.inst[6].portout.frameo_n} {tb.dut.inst[6].portout.payloadState} {tb.dut.inst[6].portout.addr} {tb.dut.inst[6].portout.reset_n} {tb.dut.inst[6].portout.valido_n} {tb.dut.inst[6].portout.validState} {tb.dut.inst[6].portout.payload} {tb.dut.inst[6].portout.$unit} {tb.dut.inst[6].portout.current_state} {tb.dut.inst[6].portout.writeout} {tb.dut.inst[6].portout.cnta} }
+03:50:56    1638 --> ...                                                      [tcl] dveMisc::vbusExpand {tb.dut.inst[6].portout}
+03:50:56    1639 --> ...                                                          [tcl] gui_set_radix -radix {decimal} -signals {{Sim:tb.dut.inst[6].portout.Wait}}
+03:50:56    1640 --> ...                                                              [tcl] gui_set_radix -radix {twosComplement} -signals {{Sim:tb.dut.inst[6].portout.Wait}}
+03:50:56    1641 --> ...                                                                  [tcl] gui_set_radix -radix {decimal} -signals {{Sim:tb.dut.inst[6].portout.payloadState}}
+03:50:56    1642 --> ...                                                                      [tcl] gui_set_radix -radix {twosComplement} -signals {{Sim:tb.dut.inst[6].portout.payloadState}}
+03:50:56    1643 --> ...                                                                          [tcl] gui_set_radix -radix {decimal} -signals {{Sim:tb.dut.inst[6].portout.addr}}
+03:50:56    1644 --> ...                                                                              [tcl] gui_set_radix -radix {twosComplement} -signals {{Sim:tb.dut.inst[6].portout.addr}}
+03:50:56    1645 --> ...                                                                                  [tcl] gui_set_radix -radix {decimal} -signals {{Sim:tb.dut.inst[6].portout.validState}}
+03:50:56    1646 --> ...                                                                                      [tcl] gui_set_radix -radix {twosComplement} -signals {{Sim:tb.dut.inst[6].portout.validState}}
+03:50:56    1647 --> ...                                                                                          [tcl] gui_set_radix -radix {decimal} -signals {{Sim:tb.dut.inst[6].portout.writeout}}
+03:50:56    1648 --> ...                                                                                              [tcl] gui_set_radix -radix {twosComplement} -signals {{Sim:tb.dut.inst[6].portout.writeout}}
+03:50:56    1649 --> ...                                                                                                  [tcl] set _session_group_52 {inst[7].portout}
+03:50:56    1650 --> ...  [tcl] gui_sg_create "$_session_group_52"
+03:50:56    1651 --> ...      [tcl] set {inst[7].portout} "$_session_group_52"
+03:50:56    1652 --> ...          [tcl] gui_sg_addsignal -group "$_session_group_52" { {tb.dut.inst[7].portout.Wait} {tb.dut.inst[7].portout.vld} {tb.dut.inst[7].portout.dout} {tb.dut.inst[7].portout.din} {tb.dut.inst[7].portout.clock} {tb.dut.inst[7].portout.cntp} {tb.dut.inst[7].portout.pop} {tb.dut.inst[7].portout.frameo_n} {tb.dut.inst[7].portout.payloadState} {tb.dut.inst[7].portout.addr} {tb.dut.inst[7].portout.reset_n} {tb.dut.inst[7].portout.valido_n} {tb.dut.inst[7].portout.validState} {tb.dut.inst[7].portout.payload} {tb.dut.inst[7].portout.$unit} {tb.dut.inst[7].portout.current_state} {tb.dut.inst[7].portout.writeout} {tb.dut.inst[7].portout.cnta} }
+03:50:56    1653 --> ...              [tcl] dveMisc::vbusExpand {tb.dut.inst[7].portout}
+03:50:56    1654 --> ...                  [tcl] gui_set_radix -radix {decimal} -signals {{Sim:tb.dut.inst[7].portout.Wait}}
+03:50:56    1655 --> ...                      [tcl] gui_set_radix -radix {twosComplement} -signals {{Sim:tb.dut.inst[7].portout.Wait}}
+03:50:56    1656 --> ...                          [tcl] gui_set_radix -radix {decimal} -signals {{Sim:tb.dut.inst[7].portout.payloadState}}
+03:50:56    1657 --> ...                              [tcl] gui_set_radix -radix {twosComplement} -signals {{Sim:tb.dut.inst[7].portout.payloadState}}
+03:50:56    1658 --> ...                                  [tcl] gui_set_radix -radix {decimal} -signals {{Sim:tb.dut.inst[7].portout.addr}}
+03:50:56    1659 --> ...                                      [tcl] gui_set_radix -radix {twosComplement} -signals {{Sim:tb.dut.inst[7].portout.addr}}
+03:50:56    1660 --> ...                                          [tcl] gui_set_radix -radix {decimal} -signals {{Sim:tb.dut.inst[7].portout.validState}}
+03:50:56    1661 --> ...                                              [tcl] gui_set_radix -radix {twosComplement} -signals {{Sim:tb.dut.inst[7].portout.validState}}
+03:50:56    1662 --> ...                                                  [tcl] gui_set_radix -radix {decimal} -signals {{Sim:tb.dut.inst[7].portout.writeout}}
+03:50:56    1663 --> ...                                                      [tcl] gui_set_radix -radix {twosComplement} -signals {{Sim:tb.dut.inst[7].portout.writeout}}
+03:50:56    1664 --> ...                                                          [tcl] # Global: Highlighting
+03:50:56    1665 --> ...                                                              [tcl] # Global: Stack
+03:50:56    1666 --> ...                                                                  [tcl] gui_change_stack_mode -mode list
+03:50:56    1667 --> ...                                                                      [tcl] # Post database loading setting...
+03:50:56    1668 --> ...                                                                          [tcl] # Save global setting...
+03:50:56    1669 --> ...                                                                              [tcl] # Wave/List view global setting
+03:50:56    1670 --> ...                                                                                  [tcl] gui_cov_show_value -switch false
+03:50:56    1671 --> ...                                                                                      [tcl] # Close all empty TopLevel windows
+03:50:56    1672 --> ...                                                                                          [tcl] foreach __top [gui_ekki_get_window_ids -type TopLevel] {     if { [llength [gui_ekki_get_window_ids -parent $__top]] == 0} {         gui_close_window -window $__top     } }
+03:50:56    1673 --> ...                                                                                              [tcl] gui_set_loading_session_type noSession
+03:50:56    1674 --> ...                                                                                                  [tcl] # DVE View/pane content session:
+03:50:56    1675 --> ...  [tcl] # Hier 'Hier.1'
+03:50:56    1676 --> ...      [tcl] gui_show_window -window ${Hier.1}
+03:50:56    1677 --> ...          [tcl] gui_list_set_filter -id ${Hier.1} -list { {Package 1} {All 0} {Process 1} {VirtPowSwitch 0} {UnnamedProcess 1} {UDP 0} {Function 1} {Block 1} {SrsnAndSpaCell 0} {OVA Unit 1} {LeafScCell 1} {LeafVlgCell 1} {Interface 1} {LeafVhdCell 1} {$unit 1} {NamedBlock 1} {Task 1} {VlgPackage 1} {ClassDef 1} {VirtIsoCell 0} }
+03:50:56    1678 --> ...              [tcl] gui_list_set_filter -id ${Hier.1} -text {*}
+03:50:56    1679 --> ...                  [tcl] gui_change_design -id ${Hier.1} -design Sim
+03:50:56    1680 --> ...                      [tcl] catch {gui_list_expand -id ${Hier.1} tb}
+03:50:56    1681 --> ...                          [tcl] catch {gui_list_expand -id ${Hier.1} tb.dut}
+03:50:56    1682 --> ...                              [tcl] catch {gui_list_select -id ${Hier.1} {{tb.dut.inst[0].portout}}}
+03:50:56    1683 --> ...                                  [tcl] gui_view_scroll -id ${Hier.1} -vertical -set 240
+03:50:56    1684 --> ...                                      [tcl] gui_view_scroll -id ${Hier.1} -horizontal -set 0
+03:50:56    1685 --> ...                                          [tcl] # Class 'Class.1'
+03:50:56    1686 --> ...                                              [tcl] gui_list_set_filter -id ${Class.1} -list { {OVM 1} {VMM 1} {All 1} {Object 1} {UVM 1} {RVM 1} }
+03:50:56    1687 --> ...                                                  [tcl] gui_list_set_filter -id ${Class.1} -text {*}
+03:50:56    1688 --> ...                                                      [tcl] gui_change_design -id ${Class.1} -design Sim
+03:50:56    1689 --> ...                                                          [tcl] # Member 'Member.1'
+03:50:56    1690 --> ...                                                              [tcl] gui_list_set_filter -id ${Member.1} -list { {InternalMember 0} {RandMember 1} {All 0} {BaseMember 0} {PrivateMember 1} {LibBaseMember 0} {AutomaticMember 1} {VirtualMember 1} {PublicMember 1} {ProtectedMember 1} {OverRiddenMember 0} {InterfaceClassMember 1} {StaticMember 1} }
+03:50:56    1691 --> ...                                                                  [tcl] gui_list_set_filter -id ${Member.1} -text {*}
+03:50:56    1692 --> ...                                                                      [tcl] # Data 'Data.1'
+03:50:56    1693 --> ...                                                                          [tcl] gui_list_set_filter -id ${Data.1} -list { {Buffer 1} {Input 1} {Others 1} {Linkage 1} {Output 1} {LowPower 1} {Parameter 1} {All 1} {Aggregate 1} {LibBaseMember 1} {Event 1} {Assertion 1} {Constant 1} {Interface 1} {BaseMembers 1} {Signal 1} {$unit 1} {Inout 1} {Variable 1} }
+03:50:56    1694 --> ...                                                                              [tcl] gui_list_set_filter -id ${Data.1} -text {*}
+03:50:56    1695 --> ...                                                                                  [tcl] gui_list_show_data -id ${Data.1} {tb.dut.inst[7].portout}
+03:50:56    1696 --> ...                                                                                      [tcl] gui_view_scroll -id ${Data.1} -vertical -set 0
+03:50:56    1697 --> ...                                                                                          [tcl] gui_view_scroll -id ${Data.1} -horizontal -set 0
+03:50:56    1698 --> ...                                                                                              [tcl] gui_view_scroll -id ${Hier.1} -vertical -set 240
+03:50:56    1699 --> ...                                                                                                  [tcl] gui_view_scroll -id ${Hier.1} -horizontal -set 0
+03:50:56    1700 --> ...  [tcl] # Source 'Source.1'
+03:50:56    1701 --> ...      [tcl] gui_src_value_annotate -id ${Source.1} -switch false
+03:50:56    1702 --> ...          [tcl] gui_set_env TOGGLE::VALUEANNOTATE 0
+03:50:56    1703 --> ...              [tcl] gui_open_source -id ${Source.1}  -replace -active tb.dut /DCNFS/users/student/lkim/Desktop/Fall2022/603/FILES/router.v
+03:50:56    1704 --> ...                  [tcl] dveMisc::vbusExpand _vcs_unit__2501136770
+03:50:56    1705 --> ...                      [tcl] gui_view_scroll -id ${Source.1} -vertical -set 0
+03:50:56    1706 --> ...                          [tcl] gui_src_set_reusable -id ${Source.1}
+03:50:56    1707 --> ...                              [tcl] # Warning: Class view not found.
+03:50:56    1708 --> ...                                  [tcl] # View 'Wave.1'
+03:50:56    1709 --> ...                                      [tcl] gui_wv_sync -id ${Wave.1} -switch false
+03:50:56    1710 --> ...                                          [tcl] set groupExD [gui_get_pref_value -category Wave -key exclusiveSG]
+03:50:56    1711 --> ...                                              [tcl] gui_set_pref_value -category Wave -key exclusiveSG -value {false}
+03:50:56    1712 --> ...                                                  [tcl] set origWaveHeight [gui_get_pref_value -category Wave -key waveRowHeight]
+03:50:56    1713 --> ...                                                      [tcl] gui_list_set_height -id Wave -height 25
+03:50:56    1714 --> ...                                                          [tcl] set origGroupCreationState [gui_list_create_group_when_add -wave]
+03:50:56    1715 --> ...                                                              [tcl] gui_list_create_group_when_add -wave -disable
+03:50:56    1716 --> ...                                                                  [tcl] gui_wv_zoom_timerange -id ${Wave.1} 239052009 240813290
+03:50:56    1717 --> ...                                                                      [tcl] gui_list_add_group -id ${Wave.1} -after {New Group} {{inst[0].fifo}}
+03:50:56    1718 --> ...                                                                          [tcl] synopsys::dump -add {_vcs_unit__2501136770 } -aggregates  -fid VPD4
+03:50:56    1719 --> ...                                                                              [tcl] synopsys::dump -add {{tb.dut.inst[4].fifo.stack} } -aggregates  -fid VPD4
+03:50:56    1720 --> ...                                                                                  [tcl] synopsys::dump -add {{tb.dut.inst[4].mux8x1.addr_from_input} {tb.dut.inst[4].mux8x1.datain} } -aggregates  -fid VPD4
+03:50:56    1721 --> ...                                                                                      [tcl] synopsys::dump -add {{tb.dut.inst[0].fifo.stack}} -aggregates  -fid VPD4
+03:50:56    1722 --> ...                                                                                          [tcl] gui_list_add_group -id ${Wave.1}  -after {inst[0].fifo} {{inst[0].fifo|inst[4].portout}}
+03:50:56    1723 --> ...                                                                                              [tcl] gui_list_add_group -id ${Wave.1} -after {{inst[0].fifo|inst[4].portout}} {{inst[0].fifo|inst[4].fifo}}
+03:50:56    1724 --> ...                                                                                                  [tcl] gui_list_add_group -id ${Wave.1} -after {{tb.dut.inst[0].fifo.Wait[31:0]}} {{inst[0].fifo|inst[4].port}}
+03:50:57    1725 --> ...  [tcl] gui_list_add_group -id ${Wave.1} -after {{tb.dut.inst[0].fifo.PopReady[31:0]}} {{inst[0].fifo|inst[4].mux8x1}}
+03:50:57    1726 --> ...      [tcl] gui_list_add_group -id ${Wave.1} -after {New Group} {{inst[0].portout}}
+03:50:57    1727 --> ...          [tcl] gui_list_add_group -id ${Wave.1} -after {New Group} {{inst[0].mux8x1}}
+03:50:57    1728 --> ...              [tcl] synopsys::dump -add {{tb.dut.inst[0].mux8x1.addr_from_input} {tb.dut.inst[0].mux8x1.datain} } -aggregates  -fid VPD4
+03:50:57    1729 --> ...                  [tcl] gui_list_add_group -id ${Wave.1} -after {New Group} {{inst[0].port}}
+03:50:57    1730 --> ...                      [tcl] gui_list_add_group -id ${Wave.1} -after {New Group} {{inst[1].fifo}}
+03:50:57    1731 --> ...                          [tcl] synopsys::dump -add {{tb.dut.inst[1].fifo.stack} } -aggregates  -fid VPD4
+03:50:57    1732 --> ...                              [tcl] gui_list_add_group -id ${Wave.1} -after {New Group} {{inst[1].mux8x1}}
+03:50:57    1733 --> ...                                  [tcl] synopsys::dump -add {{tb.dut.inst[1].mux8x1.addr_from_input} {tb.dut.inst[1].mux8x1.datain} } -aggregates  -fid VPD4
+03:50:57    1734 --> ...                                      [tcl] gui_list_add_group -id ${Wave.1} -after {New Group} {{inst[1].port}}
+03:50:57    1735 --> ...                                          [tcl] gui_list_add_group -id ${Wave.1} -after {New Group} {{inst[1].portout}}
+03:50:57    1736 --> ...                                              [tcl] gui_list_collapse -id ${Wave.1} {inst[0].fifo|inst[4].port}
+03:50:57    1737 --> ...                                                  [tcl] gui_list_collapse -id ${Wave.1} {inst[0].fifo|inst[4].mux8x1}
+03:50:57    1738 --> ...                                                      [tcl] gui_list_collapse -id ${Wave.1} {inst[0].mux8x1}
+03:50:57    1739 --> ...                                                          [tcl] gui_list_collapse -id ${Wave.1} {inst[1].fifo}
+03:50:57    1740 --> ...                                                              [tcl] gui_list_collapse -id ${Wave.1} {inst[1].mux8x1}
+03:50:58    1741 --> ...                                                                  [tcl] gui_list_collapse -id ${Wave.1} {inst[1].port}
+03:50:58    1742 --> ...                                                                      [tcl] gui_list_collapse -id ${Wave.1} {inst[1].portout}
+03:50:58    1743 --> ...                                                                          [tcl] gui_list_select -id ${Wave.1} {{tb.dut.inst[4].portout.frameo_n} }
+03:50:58    1744 --> ...                                                                              [tcl] gui_seek_criteria -id ${Wave.1} {Any Edge}
+03:50:58    1745 --> ...                                                                                  [tcl] gui_set_pref_value -category Wave -key exclusiveSG -value $groupExD
+03:50:58    1746 --> ...                                                                                      [tcl] gui_list_set_height -id Wave -height $origWaveHeight
+03:50:58    1747 --> ...                                                                                          [tcl] if {$origGroupCreationState} { 	gui_list_create_group_when_add -wave -enable }
+03:50:58    1748 --> ...                                                                                              [tcl] if { $groupExD } {  gui_msg_report -code DVWW028 }
+03:50:58    1749 --> ...                                                                                                  [tcl] gui_list_set_filter -id ${Wave.1} -list { {Buffer 1} {Input 1} {Others 1} {Linkage 1} {Output 1} {Parameter 1} {All 1} {Aggregate 1} {LibBaseMember 1} {Event 1} {Assertion 1} {Constant 1} {Interface 1} {BaseMembers 1} {Signal 1} {$unit 1} {Inout 1} {Variable 1} }
+03:50:58    1750 --> ...  [tcl] gui_list_set_filter -id ${Wave.1} -text {*}
+03:50:58    1751 --> ...      [tcl] gui_list_set_insertion_bar  -id ${Wave.1} -group {inst[0].fifo|inst[4].portout}  -item {tb.dut.inst[4].portout.cnta[5:0]} -position below
+03:50:58    1752 --> ...          [tcl] gui_view_scroll -id ${Wave.1} -vertical -set 0
+03:50:58    1753 --> ...              [tcl] gui_show_grid -id ${Wave.1} -enable false
+03:50:58    1754 --> ...                  [tcl] # View 'Wave.2'
+03:50:58    1755 --> ...                      [tcl] gui_wv_sync -id ${Wave.2} -switch false
+03:50:58    1756 --> ...                          [tcl] set groupExD [gui_get_pref_value -category Wave -key exclusiveSG]
+03:50:58    1757 --> ...                              [tcl] gui_set_pref_value -category Wave -key exclusiveSG -value {false}
+03:50:58    1758 --> ...                                  [tcl] set origWaveHeight [gui_get_pref_value -category Wave -key waveRowHeight]
+03:50:58    1759 --> ...                                      [tcl] gui_list_set_height -id Wave -height 25
+03:50:58    1760 --> ...                                          [tcl] set origGroupCreationState [gui_list_create_group_when_add -wave]
+03:50:58    1761 --> ...                                              [tcl] gui_list_create_group_when_add -wave -disable
+03:50:58    1762 --> ...                                                  [tcl] gui_wv_zoom_timerange -id ${Wave.2} 239932785 239933216
+03:50:58    1763 --> ...                                                      [tcl] gui_list_add_group -id ${Wave.2} -after {New Group} {{inst[0].portout_1}}
+03:50:58    1764 --> ...                                                          [tcl] gui_list_add_group -id ${Wave.2} -after {New Group} {{inst[1].portout_1}}
+03:50:58    1765 --> ...                                                              [tcl] gui_list_add_group -id ${Wave.2} -after {New Group} {{inst[2].portout}}
+03:50:58    1766 --> ...                                                                  [tcl] gui_list_add_group -id ${Wave.2} -after {New Group} {{inst[3].portout}}
+03:50:58    1767 --> ...                                                                      [tcl] gui_list_add_group -id ${Wave.2} -after {New Group} {{inst[4].portout}}
+03:50:58    1768 --> ...                                                                          [tcl] gui_list_add_group -id ${Wave.2} -after {New Group} {{inst[5].portout}}
+03:50:58    1769 --> ...                                                                              [tcl] gui_list_add_group -id ${Wave.2} -after {New Group} {{inst[6].portout}}
+03:50:59    1770 --> ...                                                                                  [tcl] gui_list_add_group -id ${Wave.2} -after {New Group} {{inst[7].portout}}
+03:50:59    1771 --> ...                                                                                      [tcl] gui_seek_criteria -id ${Wave.2} {Any Edge}
+03:50:59    1772 --> ...                                                                                          [tcl] gui_set_env TOGGLE::DEFAULT_WAVE_WINDOW ${Wave.2}
+03:50:59    1773 --> ...                                                                                              [tcl] gui_set_pref_value -category Wave -key exclusiveSG -value $groupExD
+03:50:59    1774 --> ...                                                                                                  [tcl] gui_list_set_height -id Wave -height $origWaveHeight
+03:50:59    1775 --> ...  [tcl] if {$origGroupCreationState} { 	gui_list_create_group_when_add -wave -enable }
+03:50:59    1776 --> ...      [tcl] if { $groupExD } {  gui_msg_report -code DVWW028 }
+03:50:59    1777 --> ...          [tcl] gui_list_set_filter -id ${Wave.2} -list { {Buffer 1} {Input 1} {Others 1} {Linkage 1} {Output 1} {Parameter 1} {All 1} {Aggregate 1} {LibBaseMember 1} {Event 1} {Assertion 1} {Constant 1} {Interface 1} {BaseMembers 1} {Signal 1} {$unit 1} {Inout 1} {Variable 1} }
+03:50:59    1778 --> ...              [tcl] gui_list_set_filter -id ${Wave.2} -text {*}
+03:50:59    1779 --> ...                  [tcl] gui_list_set_insertion_bar  -id ${Wave.2} -group {inst[7].portout}  -position in
+03:50:59    1780 --> ...                      [tcl] gui_view_scroll -id ${Wave.2} -vertical -set 0
+03:50:59    1781 --> ...                          [tcl] gui_show_grid -id ${Wave.2} -enable false
+03:50:59    1782 --> ...                              [tcl] # Restore toplevel window zorder
+03:50:59    1783 --> ...                                  [tcl] # The toplevel window could be closed if it has no view/pane
+03:50:59    1784 --> ...                                      [tcl] if {[gui_exist_window -window ${TopLevel.2}]} { 	gui_set_active_window -window ${TopLevel.2} 	gui_set_active_window -window ${Wave.1} }
+03:50:59    1785 --> ...                                          [tcl] if {[gui_exist_window -window ${TopLevel.1}]} { 	gui_set_active_window -window ${TopLevel.1} 	gui_set_active_window -window ${Source.1} 	gui_set_active_window -window ${HSPane.1} }
+03:50:59    1786 --> ...                                              [tcl] if {[gui_exist_window -window ${TopLevel.3}]} { 	gui_set_active_window -window ${TopLevel.3} 	gui_set_active_window -window ${Wave.2} }
+03:50:59    1787 --> ...                                                  [tcl] #</Session>
+03:51:04    1788 --> ...                                                      [tcl] synopsys::run
+03:51:04    1789 --> ...                                                          [tcl] set ucliGUI::state
+03:51:04    1790 --> ...                                                              [tcl] gui_update_simulator_buttons
+03:51:04    1791 --> ...                                                                  [tcl] set ucliGUI::state
+03:51:04    1792 --> ...                                                                      [tcl] set ucliGUI::state
+03:51:04    1793 --> ...                                                                          [tcl] set ucliGUI::state
+03:51:04    1794 --> ...                                                                              [tcl] catch {senv activeDomain} dveMisc::result 
+03:51:04    1795 --> ...                                                                                  [tcl] set dveMisc::result
+03:51:04    1796 --> ...                                                                                      [tcl] gui_update_simulator_buttons
+04:56:00    1797 --> ...                                                                                          [tcl] eval $tcl_prompt1
+04:56:03    1798 --> ...                                                                                              [tcl] ucliCore::getToolPID
+04:56:03    1799 --> ...                                                                                                  [tcl] ucliCore::_closeTool

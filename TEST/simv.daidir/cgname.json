@@ -1,0 +1,26 @@
+{
+    "std": [
+        "std",
+        "reYIK",
+        "module",
+        1
+    ],
+    "testbench": [
+        "testbench",
+        "iAVhC",
+        "module",
+        2
+    ],
+    "full_adder": [
+        "full_adder",
+        "BEdzp",
+        "module",
+        3
+    ],
+    "...MASTER...": [
+        "SIM",
+        "amcQw",
+        "module",
+        4
+    ]
+}

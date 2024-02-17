@@ -1,0 +1,173 @@
+[lkim@linuxvdi09 FILES]$ ./simv +CLOCK1
+Chronologic VCS simulator copyright 1991-2019
+Contains Synopsys proprietary information.
+Compiler version P-2019.06-SP2-1_Full64; Runtime version P-2019.06-SP2-1_Full64;  Dec 18 03:45 2022
+Clock Delays are 51,50
+STARTING SMOKE TEST!!!!
+Sending packet @1581000 [sa= 0] [da= 0] data=deadbeef
+Received deadbeef @9550000 and match found  
+$finish called from file "testbenchSMOKE.sv", line 157.
+
+*******************End of Simulation Report*******************
+
+Number of Errors =           0
+Number of unmatched packets =           0
+Port  0 [transmitted=  1] [received=  1] [expected=  1]
+Port  1 [transmitted=  0] [received=  0] [expected=  0]
+Port  2 [transmitted=  0] [received=  0] [expected=  0]
+Port  3 [transmitted=  0] [received=  0] [expected=  0]
+Port  4 [transmitted=  0] [received=  0] [expected=  0]
+Port  5 [transmitted=  0] [received=  0] [expected=  0]
+Port  6 [transmitted=  0] [received=  0] [expected=  0]
+Port  7 [transmitted=  0] [received=  0] [expected=  0]
+$finish at simulation time            206375000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 206375000 ps
+CPU Time:      0.310 seconds;       Data structure size:   0.1Mb
+Sun Dec 18 03:45:38 2022
+[lkim@linuxvdi09 FILES]$ ./simv +1PORT +CLOCK1
+Chronologic VCS simulator copyright 1991-2019
+Contains Synopsys proprietary information.
+Compiler version P-2019.06-SP2-1_Full64; Runtime version P-2019.06-SP2-1_Full64;  Dec 18 03:45 2022
+Clock Delays are 51,50
+STARTING 1-PORT TEST!!!!
+Sending packet @1581000 [sa= 0] [da= 0] data=12341234
+Sending packet @6375000 [sa= 0] [da= 1] data=deadbeef
+Received 12341234 @9550000 and match found  
+Sending packet @11169000 [sa= 0] [da= 2] data=9876abcd
+Received deadbeef @14350000 and match found  
+Sending packet @15963000 [sa= 0] [da= 3] data=55555555
+Received 9876abcd @19050000 and match found  
+Sending packet @20757000 [sa= 0] [da= 4] data=cafecafe
+Received 55555555 @23850000 and match found  
+Sending packet @25551000 [sa= 0] [da= 5] data=abcddcba
+Received cafecafe @28650000 and match found  
+Sending packet @30345000 [sa= 0] [da= 6] data=54555050
+Received abcddcba @33450000 and match found  
+Sending packet @35139000 [sa= 0] [da= 7] data=00001111
+Received 54555050 @38250000 and match found  
+Received 00001111 @43050000 and match found  
+$finish called from file "testbenchSMOKE.sv", line 157.
+
+*******************End of Simulation Report*******************
+
+Number of Errors =           0
+Number of unmatched packets =           0
+Port  0 [transmitted=  8] [received=  1] [expected=  1]
+Port  1 [transmitted=  0] [received=  1] [expected=  1]
+Port  2 [transmitted=  0] [received=  1] [expected=  1]
+Port  3 [transmitted=  0] [received=  1] [expected=  1]
+Port  4 [transmitted=  0] [received=  1] [expected=  1]
+Port  5 [transmitted=  0] [received=  1] [expected=  1]
+Port  6 [transmitted=  0] [received=  1] [expected=  1]
+Port  7 [transmitted=  0] [received=  1] [expected=  1]
+$finish at simulation time            239933000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 239933000 ps
+CPU Time:      0.300 seconds;       Data structure size:   0.1Mb
+Sun Dec 18 03:45:45 2022
+[lkim@linuxvdi09 FILES]$ ./simv +4PORT +CLOCK1
+Chronologic VCS simulator copyright 1991-2019
+Contains Synopsys proprietary information.
+Compiler version P-2019.06-SP2-1_Full64; Runtime version P-2019.06-SP2-1_Full64;  Dec 18 03:45 2022
+Clock Delays are 51,50
+STARTING 4-PORT TEST!!!!
+Sending packet @1581000 [sa= 0] [da= 3] data=12153524
+Sending packet @1581000 [sa= 1] [da= 2] data=c0895e81
+Sending packet @1581000 [sa= 2] [da= 1] data=8484d609
+Sending packet @1581000 [sa= 3] [da= 0] data=b1f05663
+Sending packet @6375000 [sa= 3] [da= 0] data=06b97b0d
+Sending packet @6375000 [sa= 2] [da= 1] data=46df998d
+Sending packet @6375000 [sa= 1] [da= 2] data=b2c28465
+Sending packet @6375000 [sa= 0] [da= 3] data=89375212
+Received b1f05663 @9550000 and match found  
+Received 8484d609 @9550000 and match found  
+Received c0895e81 @9550000 and match found  
+Received 12153524 @9550000 and match found  
+Sending packet @11169000 [sa= 0] [da= 3] data=00f3e301
+Sending packet @11169000 [sa= 1] [da= 2] data=06d7cd0d
+Sending packet @11169000 [sa= 2] [da= 1] data=3b23f176
+Sending packet @11169000 [sa= 3] [da= 0] data=1e8dcd3d
+Received 06b97b0d @14350000 and match found  
+Received 46df998d @14350000 and match found  
+Received b2c28465 @14350000 and match found  
+Received 89375212 @14350000 and match found  
+Sending packet @15963000 [sa= 3] [da= 0] data=76d457ed
+Sending packet @15963000 [sa= 2] [da= 1] data=462df78c
+Sending packet @15963000 [sa= 1] [da= 2] data=7cfde9f9
+Sending packet @15963000 [sa= 0] [da= 3] data=e33724c6
+Received 1e8dcd3d @19050000 and match found  
+Received 3b23f176 @19050000 and match found  
+Received 06d7cd0d @19050000 and match found  
+Received 00f3e301 @19050000 and match found  
+Sending packet @20757000 [sa= 0] [da= 3] data=e2f784c5
+Sending packet @20757000 [sa= 1] [da= 2] data=d513d2aa
+Sending packet @20757000 [sa= 2] [da= 1] data=72aff7e5
+Sending packet @20757000 [sa= 3] [da= 0] data=bbd27277
+Received 76d457ed @23850000 and match found  
+Received 462df78c @23850000 and match found  
+Received 7cfde9f9 @23850000 and match found  
+Received e33724c6 @23850000 and match found  
+Sending packet @25551000 [sa= 3] [da= 0] data=8932d612
+Sending packet @25551000 [sa= 2] [da= 1] data=47ecdb8f
+Sending packet @25551000 [sa= 1] [da= 2] data=793069f2
+Sending packet @25551000 [sa= 0] [da= 3] data=e77696ce
+Received bbd27277 @28650000 and match found  
+Received 72aff7e5 @28650000 and match found  
+Received d513d2aa @28650000 and match found  
+Received e2f784c5 @28650000 and match found  
+Sending packet @30345000 [sa= 0] [da= 3] data=f4007ae8
+Sending packet @30345000 [sa= 1] [da= 2] data=e2ca4ec5
+Sending packet @30345000 [sa= 2] [da= 1] data=2e58495c
+Sending packet @30345000 [sa= 3] [da= 0] data=de8e28bd
+Received 8932d612 @33450000 and match found  
+Received 47ecdb8f @33450000 and match found  
+Received 793069f2 @33450000 and match found  
+Received e77696ce @33450000 and match found  
+Sending packet @35139000 [sa= 3] [da= 0] data=96ab582d
+Sending packet @35139000 [sa= 2] [da= 1] data=b2a72665
+Sending packet @35139000 [sa= 1] [da= 2] data=b1ef6263
+Sending packet @35139000 [sa= 0] [da= 3] data=0573870a
+Received de8e28bd @38250000 and match found  
+Received 2e58495c @38250000 and match found  
+Received e2ca4ec5 @38250000 and match found  
+Received f4007ae8 @38250000 and match found  
+Sending packet @39933000 [sa= 0] [da= 3] data=c03b2280
+Sending packet @39933000 [sa= 1] [da= 2] data=10642120
+Sending packet @39933000 [sa= 2] [da= 1] data=557845aa
+Sending packet @39933000 [sa= 3] [da= 0] data=cecccc9d
+Received 96ab582d @43050000 and match found  
+Received b2a72665 @43050000 and match found  
+Received b1ef6263 @43050000 and match found  
+Received 0573870a @43050000 and match found  
+Sending packet @44727000 [sa= 3] [da= 0] data=cb203e96
+Sending packet @44727000 [sa= 2] [da= 1] data=8983b813
+Sending packet @44727000 [sa= 1] [da= 2] data=86bc380d
+Sending packet @44727000 [sa= 0] [da= 3] data=a9a7d653
+Received cecccc9d @47850000 and match found  
+Received 557845aa @47850000 and match found  
+Received 10642120 @47850000 and match found  
+Received c03b2280 @47850000 and match found  
+Received cb203e96 @52650000 and match found  
+Received 8983b813 @52650000 and match found  
+Received 86bc380d @52650000 and match found  
+Received a9a7d653 @52650000 and match found  
+$finish called from file "testbenchSMOKE.sv", line 157.
+
+*******************End of Simulation Report*******************
+
+Number of Errors =           0
+Number of unmatched packets =           0
+Port  0 [transmitted= 10] [received= 10] [expected= 10]
+Port  1 [transmitted= 10] [received= 10] [expected= 10]
+Port  2 [transmitted= 10] [received= 10] [expected= 10]
+Port  3 [transmitted= 10] [received= 10] [expected= 10]
+Port  4 [transmitted=  0] [received=  0] [expected=  0]
+Port  5 [transmitted=  0] [received=  0] [expected=  0]
+Port  6 [transmitted=  0] [received=  0] [expected=  0]
+Port  7 [transmitted=  0] [received=  0] [expected=  0]
+$finish at simulation time            249521000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 249521000 ps
+CPU Time:      0.310 seconds;       Data structure size:   0.1Mb
+Sun Dec 18 03:45:51 2022

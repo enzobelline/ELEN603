@@ -1,0 +1,19 @@
+*design* DebussyLib (btIdent Verdi_N-2017.12-SP1-1)
+Command arguments:  -elab  ./simv.daidir/kdb.elab++ 
+*design* DebussyLib (btIdent Verdi_N-2017.12-SP1-1)
+
+*Error* Failed to open the cell (tb hdl) in library work.
+
+
+
+*Error* Failed to open the cell (a1 hdl) in library work.
+
+
+
+*Error* Failed to open the cell (std hdl) in library work.
+
+
+
+*Error* instance 65 with null master
+
+Total	4 error(s),   0 warning(s)

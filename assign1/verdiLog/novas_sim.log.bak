@@ -1,0 +1,27 @@
+Invoking simulator...
+
+./simv -ucli -sml=verdi +UVM_VERDI_TRACE=UVM_AWARE +fsdb+gate=off -ucli2Proc -lca
+Warning-[LCA_FEATURES_ENABLED] Usage warning
+  LCA features enabled by '-lca' argument on the command line.  For more 
+  information regarding list of LCA features please refer to Chapter "LCA 
+  features" in the VCS Release Notes
+
+*Verdi* Loading libsscore_vcs201712.so
+
+FSDB Dumper for VCS, Release Verdi_N-2017.12-SP1-1, Linux x86_64/64bit, 04/19/2018
+(C) 1996 - 2018 by Synopsys, Inc.
+***********************************************************************
+*  ERROR -                                                            *
+*  The simulator version is newer than the FSDB dumper version which  *
+*  may cause abnormal behavior, please contact Synopsys support for   *
+*  assistance.                                                        *
+***********************************************************************
+
+*Verdi* FSDB WARNING: Simv_lock file is locked (/DCNFS/users/student/lkim/Desktop/Fall2022/603/assign1/inter.fsdb.slock).
+
+*Verdi* ERROR: Failed to create FSDB file: '/DCNFS/users/student/lkim/Desktop/Fall2022/603/assign1/inter.fsdb'.
+*Verdi* WARNING: fsdbDumpflush - The FSDB file has not been created.
+
+*Verdi* : Enable RPC Server(26897)
+
+Waiting for Verdi design importing...

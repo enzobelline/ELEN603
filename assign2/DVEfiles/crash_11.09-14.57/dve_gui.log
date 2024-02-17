@@ -1,0 +1,46 @@
+Chronologic VCS simulator copyright 1991-2019
+Contains Synopsys proprietary information.
+Compiler version P-2019.06-SP2-1_Full64; Runtime version P-2019.06-SP2-1_Full64;  Nov  9 14:57 2022
+VCD+ Writer P-2019.06-SP2-1_Full64 Copyright (c) 1991-2019 by Synopsys Inc.
+The file '/DCNFS/users/student/lkim/Desktop/Fall2022/603/assign2/inter.vpd' was opened successfully.
+*** FATAL: Simulation stopped due to a runtime error (such as null object access) in the HDL code.  Please see above in the log for more details, and/or recompile with '-check_all' to get more information printed to the log.
+The simulation cannot be continued. The current simulation state can be observed in DVE/UCLI.
+
+An unexpected termination has occurred in ./simv due to a signal: Segmentation fault
+Hostname linuxvdi01
+
+During icl execution command: ="_icl_dumpAdd '.' '-1' '1' '1' '/DCNFS/users/student/lkim/Desktop/Fall2022/603/assign2/inter.vpd' 'VPD' '0' '0' '0' '' '0' 'off' '1' 'testbench.dut'" <slb!&*()_+>---<sls!&*()_+>loc: -1<sls!&*()_+>diagtype: crash<sls!&*()_+>verbosity: 0<sls!&*()_+>msgtype: 0<sls!&*()_+>length: 0<sls!&*()_+>...<sls!&*()_+><sle!&*()_+>
+
+
+Command line: ./simv -gui=dve
+
+--- Stack trace follows:
+
+Dumping VCS Annotated Stack:
+#0  0x00002aaab30df60c in ?? ()
+#1  0x00002aaab305cf62 in ?? ()
+#2  0x0000000000002f52 in ?? ()
+#3  0x0000000000000000 in ?? ()
+
+Process VmPeak: 278928 kb, VmSize: 278924 kb
+System Free Memory: 950548 kb, System Free Swap: 1323772 kb
+
+Completed context dump phase data
+Internal error: could not unlock message library mutex (No such file or directory)
+
+---------------------------------------------
+
+Simulation has just terminated due to a severe internal error:
+
+
+Release = 'P-2019.06-SP2-1_Full64'  Architecture = 'linux64'  Program = 'DVE'
+
+'34507279 34543261 32984106 32993719 32876857 32880812 32884869 32885712 32772257 30655702 30657802 30654573 27526614 27530667 27544960 27484806 27233202 28120432 27231269 27446214 41756200 43639999 43645666 43646511 43649715 43674494 43645666 43795817 43814854 43962864 43645666 43649323 43649678 43964391 43645666 43795817 43814854 43649764 43675771 43645666 43795817 43814854 43962864 43645666 43649323 43895625 43645666 43795817 43814854 43962864 43645666 43649323 43649678 43964391 43645666 43795817 43814854 43649764 43675771 43645666 43795817 43814854 43962864 43645666 43649323 43895625 43645666 43795817 43814854 43649764 43704297 43645666 43795817 43814854 43962864 43645666 43649323 43649678 43964391 43645666 43795817 43814854 43649764 43675771 43645666 43795817 43814854 43962864 43645666 43649323 43895625 43645666 43646511 41753468 37247241 37223872 37261976 37254174 37254801 34556954'
+
+---------------------------------------------
+===============================DVE Context================================
+Function="fieldViewGroupItem::doDrop, View: wave view, Operation: drop on group, Parameters: group name: dut" 
+Tcl="gui_list_add -id Wave.1 -from Hier.1  testbench.dut  -insertionbar " 
+Tcl="gui_eval_and_log_cmd gui_list_add -id Wave.1 -from Hier.1  testbench.dut  -insertionbar " 
+Command line: /opt/synopsys-2019/app/vcs/P-2019.06-SP2-1/gui/dve/linux64/bin/dve.exe -full64 -ucliplatform=linux64 -toolargs "-ucligui -toolexe ./simv  -pid 11273" -toolin /tmp/vcs_20221109225717_11266_lkim..stdin -toolout /tmp/vcs_20221109225717_11266_lkim..stdout
+==========================================================================

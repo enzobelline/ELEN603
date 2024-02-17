@@ -1,0 +1,6 @@
+Command Line: /opt/synopsys-2017/app/verdi/Verdi_N-2017.12-SP1-1/platform/LINUXAMD64/bin/Novas -i -simflow -simBin ./simv -simOpt  
+uname(Linux linuxvdi10 3.10.0-1160.76.1.el7.x86_64 #1 SMP Wed Aug 10 16:21:17 UTC 2022 x86_64)
+Read sm file (/DCNFS/users/student/lkim/Desktop/Fall2022/603/assign1/simv.daidir/kdb.elab++/work.lib++/tb/hdl) error!!
+Read sm file (/DCNFS/users/student/lkim/Desktop/Fall2022/603/assign1/simv.daidir/kdb.elab++/work.lib++/a1/hdl) error!!
+Read sm file (/DCNFS/users/student/lkim/Desktop/Fall2022/603/assign1/simv.daidir/kdb.elab++/work.lib++/std/hdl) error!!
+au time 1566.819738 5.575784 2.298456 delta 218619904 218619904 total 643944448 643944448

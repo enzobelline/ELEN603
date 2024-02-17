@@ -1,0 +1,336 @@
+Chronologic VCS simulator copyright 1991-2019
+Contains Synopsys proprietary information.
+Compiler version P-2019.06-SP2-1_Full64; Runtime version P-2019.06-SP2-1_Full64;  Dec 18 03:15 2022
+VCD+ Writer P-2019.06-SP2-1_Full64 Copyright (c) 1991-2019 by Synopsys Inc.
+The file '/DCNFS/users/student/lkim/Desktop/Fall2022/603/FILES/inter.vpd' was opened successfully.
+Clock Delays are 51,50
+STARTING 1-PORT TEST!!!!
+Sending packet @1581000 [sa= 0] [da= 0] data=12341234
+Sending packet @6375000 [sa= 0] [da= 1] data=deadbeef
+Received 12341234 @9550000 and match found  
+Sending packet @11169000 [sa= 0] [da= 2] data=9876abcd
+Sending packet @15963000 [sa= 0] [da= 3] data=55555555
+Sending packet @20757000 [sa= 0] [da= 4] data=cafecafe
+Sending packet @25551000 [sa= 0] [da= 5] data=abcddcba
+Sending packet @30345000 [sa= 0] [da= 6] data=54555050
+Sending packet @35139000 [sa= 0] [da= 7] data=00001111
+$finish called from file "testbenchSMOKE.sv", line 157.
+
+*******************End of Simulation Report*******************
+
+Number of Errors =           0
+Number of unmatched packets =           7
+Port  0 [transmitted=  8] [received=  1] [expected=  1]
+Port  1 [transmitted=  0] [received=  0] [expected=  1]
+Port  2 [transmitted=  0] [received=  0] [expected=  1]
+Port  3 [transmitted=  0] [received=  0] [expected=  1]
+Port  4 [transmitted=  0] [received=  0] [expected=  1]
+Port  5 [transmitted=  0] [received=  0] [expected=  1]
+Port  6 [transmitted=  0] [received=  0] [expected=  1]
+Port  7 [transmitted=  0] [received=  0] [expected=  1]
+$finish at simulation time            239933000
+Simulation complete, time is 239933000 ps.
+Warning: [DVIT111] 
+The design was not compiled with stack debug option.
+Stack debugging cannot be supported for Stack and Local Panes.
+To enable stack debugging capabilities, please compile the design with option '-debug_access+all'.
+Please recompile using the '-debug_access<+options>' switch and incremental options as required.  Recommended options are '-debug_access' for post-process debug, '-debug_access+class' for testbench debug, and '-debug_access+all' for all debug capabilities.  Refer the VCS user guide for more granular options for debug control under the switch '-debug_access' and refer to '-debug_region' for region control.
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 239933000 ps
+CPU Time:      0.510 seconds;       Data structure size:   0.1Mb
+Sun Dec 18 03:27:14 2022
+                         Chronologic VCS (TM)
+      Version P-2019.06-SP2-1_Full64 -- Sun Dec 18 03:27:14 2022
+               Copyright (c) 1991-2019 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+
+Warning-[LIB-NO-EXT] File extension not specified
+  There is no file extension specified for verilog source library paths 
+  provided through '-y' option in command line.
+  These library paths will be ignored.
+
+Parsing design file 'testbenchSMOKE.sv'
+Parsing design file 'router.v'
+Top Level Modules:
+       tb
+       Arbiter
+TimeScale is 1 ns / 1 ps
+Starting vcs inline pass...
+8 modules and 0 UDP read.
+recompiling module tb
+recompiling module portin
+Both modules done.
+	However, due to incremental compilation, only 2 modules need to be compiled. 
+rm -f _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+ld -shared  -Bsymbolic  -o .//../simv.daidir//_csrc0.so objs/amcQw_d.o 
+rm -f _csrc0.so
+if [ -x ../simv ]; then chmod a-x ../simv; fi
+g++  -o ../simv    -rdynamic  -Wl,-rpath='$ORIGIN'/simv.daidir -Wl,-rpath=./simv.daidir -Wl,-rpath=/opt/synopsys-2019/app/vcs/P-2019.06-SP2-1/linux64/lib -L/opt/synopsys-2019/app/vcs/P-2019.06-SP2-1/linux64/lib  -Wl,-rpath-link=./  /usr/lib64/libnuma.so.1     _13999_archive_1.so _prev_archive_1.so _csrc0.so  SIM_l.o  _csrc0.so    rmapats_mop.o rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o rmar_llvm_0_0.o          -lvirsim -lerrorinf -lsnpsmalloc -lvfs    -lvcsnew -lsimprofile -luclinative /opt/synopsys-2019/app/vcs/P-2019.06-SP2-1/linux64/lib/vcs_tls.o   -Wl,-whole-archive -lvcsucli -Wl,-no-whole-archive        _vcs_pli_stub_.o   /opt/synopsys-2019/app/vcs/P-2019.06-SP2-1/linux64/lib/vcs_save_restore_new.o /opt/synopsys-2017/app/verdi/Verdi_N-2017.12-SP1-1//share/PLI/VCS/LINUX64/pli.a -ldl  -lc -lm -lpthread -ldl 
+../simv up to date
+CPU time: .407 seconds to compile + .341 seconds to elab + .298 seconds to link
+Finished rebuilding the design.
+Chronologic VCS simulator copyright 1991-2019
+Contains Synopsys proprietary information.
+Compiler version P-2019.06-SP2-1_Full64; Runtime version P-2019.06-SP2-1_Full64;  Dec 18 03:27 2022
+VCD+ Writer P-2019.06-SP2-1_Full64 Copyright (c) 1991-2019 by Synopsys Inc.
+The file '/DCNFS/users/student/lkim/Desktop/Fall2022/603/FILES/inter.vpd' was opened successfully.
+Clock Delays are 51,50
+STARTING 1-PORT TEST!!!!
+Sending packet @1581000 [sa= 0] [da= 0] data=12341234
+Sending packet @6375000 [sa= 0] [da= 1] data=deadbeef
+Received 12341234 @9550000 and match found  
+Sending packet @11169000 [sa= 0] [da= 2] data=9876abcd
+Received deadbeef @14350000 and match found  
+Sending packet @15963000 [sa= 0] [da= 3] data=55555555
+Received 9876abcd @19150000 and match found  
+Sending packet @20757000 [sa= 0] [da= 4] data=cafecafe
+Received 55555555 @23950000 and match found  
+Sending packet @25551000 [sa= 0] [da= 5] data=abcddcba
+!!!!!!!!!!!!!!!ERROR!, data mismatch with 95fd95fc
+Sending packet @30345000 [sa= 0] [da= 6] data=54555050
+!!!!!!!!!!!!!!!ERROR!, data mismatch with xxxxxxxX
+!!!!!!!!!!!!!!!ERROR!, data mismatch with 579bb97a
+Sending packet @35139000 [sa= 0] [da= 7] data=00001111
+!!!!!!!!!!!!!!!ERROR!, data mismatch with xxxxxxxX
+!!!!!!!!!!!!!!!ERROR!, data mismatch with a8aaa0d0
+!!!!!!!!!!!!!!!ERROR!, data mismatch with xxxxxxxX
+!!!!!!!!!!!!!!!ERROR!, data mismatch with 00002111
+!!!!!!!!!!!!!!!ERROR!, data mismatch with xxxxxxxX
+$finish called from file "testbenchSMOKE.sv", line 157.
+
+*******************End of Simulation Report*******************
+
+Number of Errors =           8
+Number of unmatched packets =           4
+Port  0 [transmitted=  8] [received=  1] [expected=  1]
+Port  1 [transmitted=  0] [received=  1] [expected=  1]
+Port  2 [transmitted=  0] [received=  1] [expected=  1]
+Port  3 [transmitted=  0] [received=  1] [expected=  1]
+Port  4 [transmitted=  0] [received=  2] [expected=  1]
+Port  5 [transmitted=  0] [received=  2] [expected=  1]
+Port  6 [transmitted=  0] [received=  2] [expected=  1]
+Port  7 [transmitted=  0] [received=  2] [expected=  1]
+$finish at simulation time            239933000
+Simulation complete, time is 239933000 ps.
+Warning: [DVIT111] 
+The design was not compiled with stack debug option.
+Stack debugging cannot be supported for Stack and Local Panes.
+To enable stack debugging capabilities, please compile the design with option '-debug_access+all'.
+Please recompile using the '-debug_access<+options>' switch and incremental options as required.  Recommended options are '-debug_access' for post-process debug, '-debug_access+class' for testbench debug, and '-debug_access+all' for all debug capabilities.  Refer the VCS user guide for more granular options for debug control under the switch '-debug_access' and refer to '-debug_region' for region control.
+Chronologic VCS simulator copyright 1991-2019
+Contains Synopsys proprietary information.
+Compiler version P-2019.06-SP2-1_Full64; Runtime version P-2019.06-SP2-1_Full64;  Dec 18 03:29 2022
+VCD+ Writer P-2019.06-SP2-1_Full64 Copyright (c) 1991-2019 by Synopsys Inc.
+The file '/DCNFS/users/student/lkim/Desktop/Fall2022/603/FILES/inter.vpd' was opened successfully.
+Clock Delays are 51,50
+STARTING 1-PORT TEST!!!!
+Sending packet @1581000 [sa= 0] [da= 0] data=12341234
+Sending packet @6375000 [sa= 0] [da= 1] data=deadbeef
+Received 12341234 @9550000 and match found  
+Sending packet @11169000 [sa= 0] [da= 2] data=9876abcd
+Received deadbeef @14350000 and match found  
+Sending packet @15963000 [sa= 0] [da= 3] data=55555555
+Received 9876abcd @19150000 and match found  
+Sending packet @20757000 [sa= 0] [da= 4] data=cafecafe
+Received 55555555 @23950000 and match found  
+Sending packet @25551000 [sa= 0] [da= 5] data=abcddcba
+!!!!!!!!!!!!!!!ERROR!, data mismatch with 95fd95fc
+Sending packet @30345000 [sa= 0] [da= 6] data=54555050
+!!!!!!!!!!!!!!!ERROR!, data mismatch with xxxxxxxX
+!!!!!!!!!!!!!!!ERROR!, data mismatch with 579bb97a
+Sending packet @35139000 [sa= 0] [da= 7] data=00001111
+!!!!!!!!!!!!!!!ERROR!, data mismatch with xxxxxxxX
+!!!!!!!!!!!!!!!ERROR!, data mismatch with a8aaa0d0
+!!!!!!!!!!!!!!!ERROR!, data mismatch with xxxxxxxX
+!!!!!!!!!!!!!!!ERROR!, data mismatch with 00002111
+!!!!!!!!!!!!!!!ERROR!, data mismatch with xxxxxxxX
+$finish called from file "testbenchSMOKE.sv", line 157.
+
+*******************End of Simulation Report*******************
+
+Number of Errors =           8
+Number of unmatched packets =           4
+Port  0 [transmitted=  8] [received=  1] [expected=  1]
+Port  1 [transmitted=  0] [received=  1] [expected=  1]
+Port  2 [transmitted=  0] [received=  1] [expected=  1]
+Port  3 [transmitted=  0] [received=  1] [expected=  1]
+Port  4 [transmitted=  0] [received=  2] [expected=  1]
+Port  5 [transmitted=  0] [received=  2] [expected=  1]
+Port  6 [transmitted=  0] [received=  2] [expected=  1]
+Port  7 [transmitted=  0] [received=  2] [expected=  1]
+$finish at simulation time            239933000
+Simulation complete, time is 239933000 ps.
+Warning: [DVIT111] 
+The design was not compiled with stack debug option.
+Stack debugging cannot be supported for Stack and Local Panes.
+To enable stack debugging capabilities, please compile the design with option '-debug_access+all'.
+Please recompile using the '-debug_access<+options>' switch and incremental options as required.  Recommended options are '-debug_access' for post-process debug, '-debug_access+class' for testbench debug, and '-debug_access+all' for all debug capabilities.  Refer the VCS user guide for more granular options for debug control under the switch '-debug_access' and refer to '-debug_region' for region control.
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 239933000 ps
+CPU Time:      0.380 seconds;       Data structure size:   0.1Mb
+Sun Dec 18 03:36:57 2022
+                         Chronologic VCS (TM)
+      Version P-2019.06-SP2-1_Full64 -- Sun Dec 18 03:36:58 2022
+               Copyright (c) 1991-2019 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+
+Warning-[LIB-NO-EXT] File extension not specified
+  There is no file extension specified for verilog source library paths 
+  provided through '-y' option in command line.
+  These library paths will be ignored.
+
+Parsing design file 'testbenchSMOKE.sv'
+Parsing design file 'router.v'
+Top Level Modules:
+       tb
+       Arbiter
+TimeScale is 1 ns / 1 ps
+Starting vcs inline pass...
+8 modules and 0 UDP read.
+	However, due to incremental compilation, no re-compilation is necessary.
+rm -f _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+ld -shared  -Bsymbolic  -o .//../simv.daidir//_csrc0.so objs/amcQw_d.o 
+rm -f _csrc0.so
+if [ -x ../simv ]; then chmod a-x ../simv; fi
+g++  -o ../simv    -rdynamic  -Wl,-rpath='$ORIGIN'/simv.daidir -Wl,-rpath=./simv.daidir -Wl,-rpath=/opt/synopsys-2019/app/vcs/P-2019.06-SP2-1/linux64/lib -L/opt/synopsys-2019/app/vcs/P-2019.06-SP2-1/linux64/lib  -Wl,-rpath-link=./  /usr/lib64/libnuma.so.1     _16196_archive_1.so _prev_archive_1.so _csrc0.so  SIM_l.o  _csrc0.so    rmapats_mop.o rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o rmar_llvm_0_0.o          -lvirsim -lerrorinf -lsnpsmalloc -lvfs    -lvcsnew -lsimprofile -luclinative /opt/synopsys-2019/app/vcs/P-2019.06-SP2-1/linux64/lib/vcs_tls.o   -Wl,-whole-archive -lvcsucli -Wl,-no-whole-archive        _vcs_pli_stub_.o   /opt/synopsys-2019/app/vcs/P-2019.06-SP2-1/linux64/lib/vcs_save_restore_new.o /opt/synopsys-2017/app/verdi/Verdi_N-2017.12-SP1-1//share/PLI/VCS/LINUX64/pli.a -ldl  -lc -lm -lpthread -ldl 
+../simv up to date
+CPU time: .355 seconds to compile + .338 seconds to elab + .319 seconds to link
+Finished rebuilding the design.
+Chronologic VCS simulator copyright 1991-2019
+Contains Synopsys proprietary information.
+Compiler version P-2019.06-SP2-1_Full64; Runtime version P-2019.06-SP2-1_Full64;  Dec 18 03:37 2022
+VCD+ Writer P-2019.06-SP2-1_Full64 Copyright (c) 1991-2019 by Synopsys Inc.
+The file '/DCNFS/users/student/lkim/Desktop/Fall2022/603/FILES/inter.vpd' was opened successfully.
+Clock Delays are 51,50
+STARTING 1-PORT TEST!!!!
+Sending packet @1581000 [sa= 0] [da= 0] data=12341234
+Sending packet @6375000 [sa= 0] [da= 1] data=deadbeef
+Received 12341234 @9550000 and match found  
+Sending packet @11169000 [sa= 0] [da= 2] data=9876abcd
+Received deadbeef @14350000 and match found  
+Sending packet @15963000 [sa= 0] [da= 3] data=55555555
+Received 9876abcd @19150000 and match found  
+Sending packet @20757000 [sa= 0] [da= 4] data=cafecafe
+Received 55555555 @23950000 and match found  
+Sending packet @25551000 [sa= 0] [da= 5] data=abcddcba
+!!!!!!!!!!!!!!!ERROR!, data mismatch with 95fd95fc
+Sending packet @30345000 [sa= 0] [da= 6] data=54555050
+!!!!!!!!!!!!!!!ERROR!, data mismatch with xxxxxxxX
+!!!!!!!!!!!!!!!ERROR!, data mismatch with 579bb97a
+Sending packet @35139000 [sa= 0] [da= 7] data=00001111
+!!!!!!!!!!!!!!!ERROR!, data mismatch with xxxxxxxX
+!!!!!!!!!!!!!!!ERROR!, data mismatch with a8aaa0d0
+!!!!!!!!!!!!!!!ERROR!, data mismatch with xxxxxxxX
+!!!!!!!!!!!!!!!ERROR!, data mismatch with 00002111
+!!!!!!!!!!!!!!!ERROR!, data mismatch with xxxxxxxX
+$finish called from file "testbenchSMOKE.sv", line 157.
+
+*******************End of Simulation Report*******************
+
+Number of Errors =           8
+Number of unmatched packets =           4
+Port  0 [transmitted=  8] [received=  1] [expected=  1]
+Port  1 [transmitted=  0] [received=  1] [expected=  1]
+Port  2 [transmitted=  0] [received=  1] [expected=  1]
+Port  3 [transmitted=  0] [received=  1] [expected=  1]
+Port  4 [transmitted=  0] [received=  2] [expected=  1]
+Port  5 [transmitted=  0] [received=  2] [expected=  1]
+Port  6 [transmitted=  0] [received=  2] [expected=  1]
+Port  7 [transmitted=  0] [received=  2] [expected=  1]
+$finish at simulation time            239933000
+Simulation complete, time is 239933000 ps.
+Warning: [DVIT111] 
+The design was not compiled with stack debug option.
+Stack debugging cannot be supported for Stack and Local Panes.
+To enable stack debugging capabilities, please compile the design with option '-debug_access+all'.
+Please recompile using the '-debug_access<+options>' switch and incremental options as required.  Recommended options are '-debug_access' for post-process debug, '-debug_access+class' for testbench debug, and '-debug_access+all' for all debug capabilities.  Refer the VCS user guide for more granular options for debug control under the switch '-debug_access' and refer to '-debug_region' for region control.
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 239933000 ps
+CPU Time:      0.450 seconds;       Data structure size:   0.1Mb
+Sun Dec 18 03:50:49 2022
+                         Chronologic VCS (TM)
+      Version P-2019.06-SP2-1_Full64 -- Sun Dec 18 03:50:50 2022
+               Copyright (c) 1991-2019 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+
+Warning-[LIB-NO-EXT] File extension not specified
+  There is no file extension specified for verilog source library paths 
+  provided through '-y' option in command line.
+  These library paths will be ignored.
+
+Parsing design file 'testbenchSMOKE.sv'
+Parsing design file 'router.v'
+Top Level Modules:
+       tb
+       Arbiter
+TimeScale is 1 ns / 1 ps
+Starting vcs inline pass...
+8 modules and 0 UDP read.
+	However, due to incremental compilation, no re-compilation is necessary.
+rm -f _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+ld -shared  -Bsymbolic  -o .//../simv.daidir//_csrc0.so objs/amcQw_d.o 
+rm -f _csrc0.so
+if [ -x ../simv ]; then chmod a-x ../simv; fi
+g++  -o ../simv    -rdynamic  -Wl,-rpath='$ORIGIN'/simv.daidir -Wl,-rpath=./simv.daidir -Wl,-rpath=/opt/synopsys-2019/app/vcs/P-2019.06-SP2-1/linux64/lib -L/opt/synopsys-2019/app/vcs/P-2019.06-SP2-1/linux64/lib  -Wl,-rpath-link=./  /usr/lib64/libnuma.so.1     _19269_archive_1.so _prev_archive_1.so _csrc0.so  SIM_l.o  _csrc0.so    rmapats_mop.o rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o rmar_llvm_0_0.o          -lvirsim -lerrorinf -lsnpsmalloc -lvfs    -lvcsnew -lsimprofile -luclinative /opt/synopsys-2019/app/vcs/P-2019.06-SP2-1/linux64/lib/vcs_tls.o   -Wl,-whole-archive -lvcsucli -Wl,-no-whole-archive        _vcs_pli_stub_.o   /opt/synopsys-2019/app/vcs/P-2019.06-SP2-1/linux64/lib/vcs_save_restore_new.o /opt/synopsys-2017/app/verdi/Verdi_N-2017.12-SP1-1//share/PLI/VCS/LINUX64/pli.a -ldl  -lc -lm -lpthread -ldl 
+../simv up to date
+CPU time: .365 seconds to compile + .338 seconds to elab + .299 seconds to link
+Finished rebuilding the design.
+Chronologic VCS simulator copyright 1991-2019
+Contains Synopsys proprietary information.
+Compiler version P-2019.06-SP2-1_Full64; Runtime version P-2019.06-SP2-1_Full64;  Dec 18 03:50 2022
+VCD+ Writer P-2019.06-SP2-1_Full64 Copyright (c) 1991-2019 by Synopsys Inc.
+The file '/DCNFS/users/student/lkim/Desktop/Fall2022/603/FILES/inter.vpd' was opened successfully.
+Clock Delays are 51,50
+STARTING 1-PORT TEST!!!!
+Sending packet @1581000 [sa= 0] [da= 0] data=12341234
+Sending packet @6375000 [sa= 0] [da= 1] data=deadbeef
+Received 12341234 @9550000 and match found  
+Sending packet @11169000 [sa= 0] [da= 2] data=9876abcd
+Received deadbeef @14350000 and match found  
+Sending packet @15963000 [sa= 0] [da= 3] data=55555555
+Received 9876abcd @19050000 and match found  
+Sending packet @20757000 [sa= 0] [da= 4] data=cafecafe
+Received 55555555 @23850000 and match found  
+Sending packet @25551000 [sa= 0] [da= 5] data=abcddcba
+Received cafecafe @28650000 and match found  
+Sending packet @30345000 [sa= 0] [da= 6] data=54555050
+Received abcddcba @33450000 and match found  
+Sending packet @35139000 [sa= 0] [da= 7] data=00001111
+Received 54555050 @38250000 and match found  
+Received 00001111 @43050000 and match found  
+$finish called from file "testbenchSMOKE.sv", line 157.
+
+*******************End of Simulation Report*******************
+
+Number of Errors =           0
+Number of unmatched packets =           0
+Port  0 [transmitted=  8] [received=  1] [expected=  1]
+Port  1 [transmitted=  0] [received=  1] [expected=  1]
+Port  2 [transmitted=  0] [received=  1] [expected=  1]
+Port  3 [transmitted=  0] [received=  1] [expected=  1]
+Port  4 [transmitted=  0] [received=  1] [expected=  1]
+Port  5 [transmitted=  0] [received=  1] [expected=  1]
+Port  6 [transmitted=  0] [received=  1] [expected=  1]
+Port  7 [transmitted=  0] [received=  1] [expected=  1]
+$finish at simulation time            239933000
+Simulation complete, time is 239933000 ps.
+Warning: [DVIT111] 
+The design was not compiled with stack debug option.
+Stack debugging cannot be supported for Stack and Local Panes.
+To enable stack debugging capabilities, please compile the design with option '-debug_access+all'.
+Please recompile using the '-debug_access<+options>' switch and incremental options as required.  Recommended options are '-debug_access' for post-process debug, '-debug_access+class' for testbench debug, and '-debug_access+all' for all debug capabilities.  Refer the VCS user guide for more granular options for debug control under the switch '-debug_access' and refer to '-debug_region' for region control.

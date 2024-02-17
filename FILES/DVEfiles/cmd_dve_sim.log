@@ -1,0 +1,211 @@
+ucliGUI::start /DCNFS/users/student/lkim/Desktop/Fall2022/603/FILES/simv -ucligui +1PORT
+set ucliGUI::state
+set ucliGUI::state
+ucliCore::getToolPID
+synopsys::env hasTB
+trigger_hier_stack_context_switch 0
+synopsys::xml set_array_limit <data limit="50" />
+synopsys::xml set_depth_limit <data limit="100" />
+synopsys::xml set_string_limit <data limit="1000" />
+synopsys::xml set_only_active_frame <data value="1" />
+synopsys::xml set_variable_frame_id <data value="1" />
+synUtils::setDVEInitPhase 1
+synopsys::dump -type VPD -file /DCNFS/users/student/lkim/Desktop/Fall2022/603/FILES/inter.vpd -locking
+synopsys::dump -autoflush on -fid VPD4
+set ::dve_fid VPD4
+synUtils::setDVEInitPhase 0
+ucliCore::getToolPID
+synUtils::sendTool -active _icl_setToolSocket /tmp/smlnpYaqRzh
+synUtils::sendTool -active {_icl_start_rpc -version "P-2019.06-SP2-1_Full64" -sync_file /tmp/vcs_dve_rpc.lkim.19513}
+synUtils::sendTool -active {_icl_createSharedMemory /tmp/vcs_dve_general.lkim.19513}
+config endofsim noexit
+config onfail enable all
+config syscaddplainmembers
+config syscaddsourcenames
+config syscaddstructtypes
+synopsys::listing -disable
+# Begin_DVE_Session_Save_Info
+# DVE restart session
+# Saved on Sun Dec 18 03:50:49 2022
+# Designs open: 1
+#   Sim: /DCNFS/users/student/lkim/Desktop/Fall2022/603/FILES/simv
+# Toplevel windows open: 3
+# 	TopLevel.1
+# 	TopLevel.2
+# 	TopLevel.3
+#   Source.1: tb.dut
+#   Wave.1: 180 signals
+#   Wave.2: 144 signals
+#   Group count = 20
+#   Group inst[0].fifo signal count = 20
+#   Group inst[0].portout signal count = 18
+#   Group inst[0].mux8x1 signal count = 14
+#   Group inst[0].port signal count = 12
+#   Group inst[1].fifo signal count = 16
+#   Group inst[1].mux8x1 signal count = 14
+#   Group inst[1].port signal count = 12
+#   Group inst[1].portout signal count = 18
+#   Group inst[0].portout_1 signal count = 18
+#   Group inst[1].portout_1 signal count = 18
+#   Group inst[2].portout signal count = 18
+#   Group inst[3].portout signal count = 18
+#   Group inst[4].portout signal count = 18
+#   Group inst[5].portout signal count = 18
+#   Group inst[6].portout signal count = 18
+#   Group inst[7].portout signal count = 18
+# End_DVE_Session_Save_Info
+# DVE version: P-2019.06-SP2-1_Full64
+# DVE build date: Jan 30 2020 21:14:28
+#<Session mode="Restart" path=".restartSimSession.tcl" type="Debug">
+# Application preferences
+#<WindowLayout>
+# DVE top-level session
+# Create and position top-level window: TopLevel.1
+set TopLevel.1 TopLevel.1
+# Docked window settings
+set HSPane.1 HSPane.1
+set Hier.1 Hier.1
+set Stack.1 Stack.1
+set Class.1 Class.1
+set Object.1 Object.1
+set DLPane.1 DLPane.1
+set Data.1 Data.1
+set Local.1 Local.1
+set Member.1 Member.1
+set Console.1 Console.1
+# MDI window settings
+set Source.1 Source.1
+# End MDI window settings
+# Create and position top-level window: TopLevel.2
+set TopLevel.2 TopLevel.2
+# Docked window settings
+# MDI window settings
+set Wave.1 Wave.1
+# End MDI window settings
+# Create and position top-level window: TopLevel.3
+set TopLevel.3 TopLevel.3
+# Docked window settings
+# MDI window settings
+set Wave.2 Wave.2
+# End MDI window settings
+#</WindowLayout>
+#<Database>
+#</Database>
+# DVE Global setting session:
+# Global: Breakpoints
+# Global: Bus
+# Global: Expressions
+# Global: Signal Time Shift
+# Global: Signal Compare
+# Global: Signal Groups
+synopsys::dump -add {{tb.dut.inst[2].portout}} -scope "." -depth 1 -fid VPD4
+synopsys::dump -add {{tb.dut.inst[0].fifo}} -scope "." -depth 1 -fid VPD4
+synopsys::dump -add {{tb.dut.inst[4].mux8x1}} -scope "." -depth 1 -fid VPD4
+synopsys::dump -add {{tb.dut.inst[5].portout}} -scope "." -depth 1 -fid VPD4
+synopsys::dump -add {{tb.dut.inst[1].mux8x1}} -scope "." -depth 1 -fid VPD4
+synopsys::dump -add {{tb.dut.inst[0].portout}} -scope "." -depth 1 -fid VPD4
+synopsys::dump -add {{tb.dut.inst[1].port}} -scope "." -depth 1 -fid VPD4
+synopsys::dump -add {{tb.dut.inst[3].portout}} -scope "." -depth 1 -fid VPD4
+synopsys::dump -add {{tb.dut.inst[6].portout}} -scope "." -depth 1 -fid VPD4
+synopsys::dump -add {{tb.dut.inst[1].fifo}} -scope "." -depth 1 -fid VPD4
+synopsys::dump -add {{tb.dut.inst[1].portout}} -scope "." -depth 1 -fid VPD4
+synopsys::dump -add {{tb.dut.inst[4].portout}} -scope "." -depth 1 -fid VPD4
+synopsys::dump -add {{tb.dut.inst[4].port}} -scope "." -depth 1 -fid VPD4
+synopsys::dump -add {{tb.dut.inst[7].portout}} -scope "." -depth 1 -fid VPD4
+synopsys::dump -add {{tb.dut.inst[0].mux8x1}} -scope "." -depth 1 -fid VPD4
+synopsys::dump -add {{tb.dut.inst[0].port}} -scope "." -depth 1 -fid VPD4
+synopsys::dump -add {{tb.dut.inst[4].fifo}} -scope "." -depth 1 -fid VPD4
+set _session_group_33 {inst[0].fifo}
+set {inst[0].fifo} "$_session_group_33"
+set _session_group_34 $_session_group_33|
+append _session_group_34 {inst[4].portout}
+set {inst[0].fifo|inst[4].portout} "$_session_group_34"
+set _session_group_35 $_session_group_33|
+append _session_group_35 {inst[4].fifo}
+set {inst[0].fifo|inst[4].fifo} "$_session_group_35"
+set _session_group_36 $_session_group_33|
+append _session_group_36 {inst[4].port}
+set {inst[0].fifo|inst[4].port} "$_session_group_36"
+set _session_group_37 $_session_group_33|
+append _session_group_37 {inst[4].mux8x1}
+set {inst[0].fifo|inst[4].mux8x1} "$_session_group_37"
+set _session_group_38 {inst[0].portout}
+set {inst[0].portout} "$_session_group_38"
+set _session_group_39 {inst[0].mux8x1}
+set {inst[0].mux8x1} "$_session_group_39"
+set _session_group_40 {inst[0].port}
+set {inst[0].port} "$_session_group_40"
+set _session_group_41 {inst[1].fifo}
+set {inst[1].fifo} "$_session_group_41"
+set _session_group_42 {inst[1].mux8x1}
+set {inst[1].mux8x1} "$_session_group_42"
+set _session_group_43 {inst[1].port}
+set {inst[1].port} "$_session_group_43"
+set _session_group_44 {inst[1].portout}
+set {inst[1].portout} "$_session_group_44"
+set _session_group_45 {inst[0].portout_1}
+set {inst[0].portout_1} "$_session_group_45"
+set _session_group_46 {inst[1].portout_1}
+set {inst[1].portout_1} "$_session_group_46"
+set _session_group_47 {inst[2].portout}
+set {inst[2].portout} "$_session_group_47"
+set _session_group_48 {inst[3].portout}
+set {inst[3].portout} "$_session_group_48"
+set _session_group_49 {inst[4].portout}
+set {inst[4].portout} "$_session_group_49"
+set _session_group_50 {inst[5].portout}
+set {inst[5].portout} "$_session_group_50"
+set _session_group_51 {inst[6].portout}
+set {inst[6].portout} "$_session_group_51"
+set _session_group_52 {inst[7].portout}
+set {inst[7].portout} "$_session_group_52"
+# Global: Highlighting
+# Global: Stack
+# Post database loading setting...
+# Save global setting...
+# Wave/List view global setting
+# Close all empty TopLevel windows
+foreach __top [gui_ekki_get_window_ids -type TopLevel] {     if { [llength [gui_ekki_get_window_ids -parent $__top]] == 0} {         gui_close_window -window $__top     } }
+# DVE View/pane content session:
+# Hier 'Hier.1'
+catch {gui_list_expand -id ${Hier.1} tb}
+catch {gui_list_expand -id ${Hier.1} tb.dut}
+catch {gui_list_select -id ${Hier.1} {{tb.dut.inst[0].portout}}}
+# Class 'Class.1'
+# Member 'Member.1'
+# Data 'Data.1'
+# Source 'Source.1'
+# Warning: Class view not found.
+# View 'Wave.1'
+set groupExD [gui_get_pref_value -category Wave -key exclusiveSG]
+set origWaveHeight [gui_get_pref_value -category Wave -key waveRowHeight]
+set origGroupCreationState [gui_list_create_group_when_add -wave]
+synopsys::dump -add {_vcs_unit__2501136770 } -aggregates  -fid VPD4
+synopsys::dump -add {{tb.dut.inst[4].fifo.stack} } -aggregates  -fid VPD4
+synopsys::dump -add {{tb.dut.inst[4].mux8x1.addr_from_input} {tb.dut.inst[4].mux8x1.datain} } -aggregates  -fid VPD4
+synopsys::dump -add {{tb.dut.inst[0].fifo.stack}} -aggregates  -fid VPD4
+synopsys::dump -add {{tb.dut.inst[0].mux8x1.addr_from_input} {tb.dut.inst[0].mux8x1.datain} } -aggregates  -fid VPD4
+synopsys::dump -add {{tb.dut.inst[1].fifo.stack} } -aggregates  -fid VPD4
+synopsys::dump -add {{tb.dut.inst[1].mux8x1.addr_from_input} {tb.dut.inst[1].mux8x1.datain} } -aggregates  -fid VPD4
+if {$origGroupCreationState} { 	gui_list_create_group_when_add -wave -enable }
+if { $groupExD } {  gui_msg_report -code DVWW028 }
+# View 'Wave.2'
+set groupExD [gui_get_pref_value -category Wave -key exclusiveSG]
+set origWaveHeight [gui_get_pref_value -category Wave -key waveRowHeight]
+set origGroupCreationState [gui_list_create_group_when_add -wave]
+if {$origGroupCreationState} { 	gui_list_create_group_when_add -wave -enable }
+if { $groupExD } {  gui_msg_report -code DVWW028 }
+# Restore toplevel window zorder
+# The toplevel window could be closed if it has no view/pane
+if {[gui_exist_window -window ${TopLevel.2}]} { 	gui_set_active_window -window ${TopLevel.2} 	gui_set_active_window -window ${Wave.1} }
+if {[gui_exist_window -window ${TopLevel.1}]} { 	gui_set_active_window -window ${TopLevel.1} 	gui_set_active_window -window ${Source.1} 	gui_set_active_window -window ${HSPane.1} }
+if {[gui_exist_window -window ${TopLevel.3}]} { 	gui_set_active_window -window ${TopLevel.3} 	gui_set_active_window -window ${Wave.2} }
+#</Session>
+synopsys::run
+set ucliGUI::state
+set ucliGUI::state
+set ucliGUI::state
+set ucliGUI::state
+eval $tcl_prompt1
+ucliCore::getToolPID
+ucliCore::_closeTool

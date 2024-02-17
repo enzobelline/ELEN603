@@ -1,0 +1,32 @@
+{
+    "std": [
+        "std",
+        "reYIK",
+        "module",
+        1
+    ],
+    "testbench": [
+        "testbench",
+        "iAVhC",
+        "module",
+        2
+    ],
+    "mem": [
+        "mem",
+        "FSbWZ",
+        "module",
+        3
+    ],
+    "DW_ram_2r_2w_s_dff": [
+        "DW_ram_2r_2w_s_dff",
+        "TJpB4",
+        "module",
+        4
+    ],
+    "...MASTER...": [
+        "SIM",
+        "amcQw",
+        "module",
+        5
+    ]
+}

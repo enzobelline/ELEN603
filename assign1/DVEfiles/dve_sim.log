@@ -1,0 +1,27 @@
+20:39:51    16 -->                                                             [tcl] ucliGUI::connect -toolargs -ucligui -toolexe ./simv -pid 15022 -toolin /tmp/vcs_20221103033948_15014_lkim..stdin -toolout /tmp/vcs_20221103033948_15014_lkim..stdout  
+20:39:51    17 -->                                                                 [tcl] set ucliGUI::state
+20:39:51    18 -->                                                                     [tcl] gui_update_simulator_buttons
+20:39:52    19 -->                                                                         [tcl] set ucliGUI::state
+20:39:52    20 -->                                                                             [tcl] ucliCore::getToolPID
+20:39:52    21 -->                                                                                 [tcl] synopsys::env hasTB
+20:39:52    22 -->                                                                                     [tcl] trigger_hier_stack_context_switch 0
+20:39:52    23 -->                                                                                         [tcl] synUtils::setDVEInitPhase 1
+20:39:52    24 -->                                                                                             [tcl] gui_get_env SIMSETUP::SIMVPD
+20:39:52    25 --> ...  [tcl] synopsys::dump -type VPD -file /DCNFS/users/student/lkim/Desktop/Fall2022/603/assign1/inter.vpd -locking
+20:39:52    26 --> ...      [tcl] synopsys::dump -autoflush on -fid VPD0
+20:39:52    27 --> ...          [tcl] set ::dve_fid VPD0
+20:39:52    28 --> ...              [tcl] synUtils::setDVEInitPhase 0
+20:39:52    29 --> ...                  [tcl] ucliCore::getToolPID
+20:39:52    30 --> ...                      [tcl] synUtils::sendTool -active _icl_setToolSocket /tmp/smlnp5hLGNr
+20:39:52    31 --> ...                          [tcl] synUtils::sendTool -active {_icl_start_rpc -version "P-2019.06-SP2-1_Full64" -sync_file /tmp/vcs_dve_rpc.lkim.15022}
+20:39:53    32 --> ...                              [tcl] synUtils::sendTool -active {_icl_createSharedMemory /tmp/vcs_dve_general.lkim.15022}
+20:39:53    33 --> ...                                  [tcl] dveMisc::vbusExpand tb
+20:39:53    34 --> ...                                      [tcl] config endofsim noexit
+20:39:53    35 --> ...                                          [tcl] config onfail enable all
+20:39:53    36 --> ...                                              [tcl] config syscaddplainmembers
+20:39:53    37 --> ...                                                  [tcl] config syscaddsourcenames
+20:39:53    38 --> ...                                                      [tcl] config syscaddstructtypes
+20:39:53    39 --> ...                                                          [tcl] synopsys::listing -disable
+21:17:15    40 --> ...                                                              [tcl] eval $tcl_prompt1
+21:17:15    41 --> ...                                                                  [tcl] ucliCore::getToolPID
+21:17:15    42 --> ...                                                                      [tcl] ucliCore::_closeTool
